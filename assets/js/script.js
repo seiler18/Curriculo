@@ -63,34 +63,108 @@ function getCities() {
 
 //PARA EJERCICIO 2
 
-$(document).ready(function () {
-    $('#btnBuscarPokemon').click(function () {
-        getPokemones1();
-        console.log("Se listan pokemones");
+$(document).ready(function getPokemon() {
+    $.ajax({
+        url: 'https://pokeapi.co/api/v2/generation/1',
+        success: function (respuesta) {
+            console.log(respuesta);
+            var listaUsuarios = $("#selPoke");
+            $.each(respuesta.pokemon_species, function (index, elemento) {
+                listaUsuarios.append(
+                    '<option value=' + index + '>' + elemento.name+'</option>'
+                );
+            });
+
+            
+        },
+        error: function () {
+            console.log("No se ha podido obtener la información");
+        }
+    });
+});
+
+$(document).ready(function getHabilidades() {
+    $.ajax({
+        url: 'https://pokeapi.co/api/v2/generation/1',
+        success: function (respuesta) {
+            console.log(respuesta);
+            var listaHabilidades = $("#Habilidades");
+            $.each(respuesta.moves, function (index, elemento) {
+                listaHabilidades.append(index , elemento.name );
+            });
+
+            
+        },
+        error: function () {
+            console.log("No se ha podido obtener la información");
+        }
     });
 });
 
 
-function getPokemones1() {
-   
-    
-    $.ajax({
-        url: "https://pokeapi.co/api/v2/pokemon/?offset=0&limit=10",
-        type:"GET",
-        dataType: 'json',
-        success: function (data) {
-            data.results.forEach(element => {
-                var optionText = element.name;
-                var optionValue = element.url;
+function datosPokemon(consulta) {
+	$.ajax({
+		url: 'https://pokeapi.co/api/v2/pokemon/'+consulta,
+		type: 'GET',
+		dataType: 'html',
+		data: { consulta: consulta },
+	})
 
-      $('#Pokemon').append(`<option value="${optionValue}">
-      ${optionText}</option>)`
-      );
-    });
+		.done(function res(respuesta) {
+			$("#dato1").html(respuesta.pokemon_species);
+		})
 
-  
-        }
-        
-    });
-    
+		.fail(function () {
+			console.log("error");
+		})
 }
+
+
+function HabilidadesPokemon(consulta) {
+	$.ajax({
+		url: 'https://pokeapi.co/api/v2/generation/1'+consulta,
+		type: 'GET',
+		dataType: 'html',
+		data: { consulta:consulta},
+	})
+
+		.done(function res(respuesta) {
+			$("#datos3").html(respuesta.moves);
+		})
+
+		.fail(function () {
+			console.log("error");
+		})
+}
+
+
+
+
+
+
+$(document).bind('change keyup', '#selPoke',   function () {
+    var valor = $('#selPoke').val();
+    var valor2 = $('#selPoke option:selected').text();
+    var valor3 = $('#Habilidades').val();
+    var valor4= $();
+    var dato1 = $("#datos");
+    var dato2 = $("#datos2");
+    var dato3 = $("#datos3");
+    var dato4 = $("#datos4");
+	if (valor != null || valor != "") {
+        alert("Ha Seleccionado el pokemon con ID : " + valor)
+        console.log(valor);
+        dato1.html("<p>ID Pokemon "+valor+"</p>");
+        dato2.html("<h4>"+valor2+"</h4>");       
+        dato3.html("Tiene las siguientes Habilidades : " +valor3 );
+        //imagen momentanea de un pokemon mientras hago la funcion
+        dato4.html("Imagen del Pokemon"+ `<br></br>`+`` + valor4);
+        //datosPokemon(valor);  
+	} else {
+        
+            alert("Debe seleccionar un Pokemon")
+        console.log("Error");
+        
+	}
+});
+    
