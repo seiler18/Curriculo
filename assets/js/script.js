@@ -1,17 +1,17 @@
-//Desaparecer y aparecer en mi navbar
+//-----------------------------------------------------------Desaparecer y aparecer en mi navbar
 
 $("h1").fadeOut(3000).fadeIn(3000);
 $("li1").fadeOut(3000).fadeIn(3000);
 $("#ejercicio1").fadeOut(2500).fadeIn(1500);
 
-//Cambiar tamaño en la seccion footer, y esconde el  boton
+//-----------------------------------------------------------Cambiar tamaño en la seccion footer, y esconde el  boton
 $("#cambiar").click(function() {
     $("#footer").animate({fontSize:'2em'},2500);
     $(this).hide().delay(1500);
 });
 
 
-//PARA EJERCICIO 1
+//-----------------------------------------------------------PARA EJERCICIO 1
 
 var miDataTable = null;
 
@@ -57,11 +57,11 @@ function getCities() {
 
 }
 
-//PARA EJERCICIO 1
+//-----------------------------------------------------------PARA EJERCICIO 1
 
 
 
-//PARA EJERCICIO 2
+//-----------------------------------------------------------PARA EJERCICIO 2 POKEDEX
 
 $(document).ready(function getPokemon() {
     $.ajax({
@@ -90,7 +90,8 @@ $(document).ready(function getHabilidades() {
             console.log(respuesta);
             var listaHabilidades = $("#Habilidades");
             $.each(respuesta.moves, function (index, elemento) {
-                listaHabilidades.append(index , elemento.name );
+                listaHabilidades.append( 
+                '<option value='+ index , elemento.name +'</option>');
             });
 
             
@@ -122,7 +123,7 @@ function datosPokemon(consulta) {
 
 function HabilidadesPokemon(consulta) {
 	$.ajax({
-		url: 'https://pokeapi.co/api/v2/generation/1'+consulta,
+		url: 'https://pokeapi.co/api/v2/generation/1',
 		type: 'GET',
 		dataType: 'html',
 		data: { consulta:consulta},
@@ -165,6 +166,10 @@ $(document).bind('change keyup', '#selPoke',   function () {
             alert("Debe seleccionar un Pokemon")
         console.log("Error");
         
-	}
+    }
+    
+
+
+    
 });
     
