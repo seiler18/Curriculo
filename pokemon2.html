@@ -21,10 +21,7 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.5/css/responsive.dataTables.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
-    <script src="https://cdn.datatables.net/responsive/2.2.5/js/dataTables.responsive.min.js"></script>
-    <script src="https://cdn.datatables.net/responsive/2.2.5/js/responsive.bootstrap4.min.js"></script>
+
  
 
   </head>
@@ -46,41 +43,48 @@
             <li1 class="nav-item">
               <a class="nav-link hero-section text-light" href="ejemplos_index.html">Menu Ejercicios</a>
             </li1>
+          
         
           </ul>
         </div>
       </div>
     </nav>
 
-
-
-<!--SECCION DESARROLLO De Ejercicios-->
-    <section class="container-fluid my-5 p-5 bg-dark">
-      <div id="ejercicio1"><h2 class="display-4 text-center font-weight-bold text-light mb-3 header-section1 container-fluid">Ejercicio 1 : Consulta de Ciudades por API</h2></div>
+    <section class="container-fluid my-5 p-5 bg-dark ">
+      <div id="ejercicio1"><h2 class="display-4 text-center font-weight-bold text-light mb-3 header-section1 container-fluid">Ejercicio 2 : Pokedex</h2></div>
     </section>
 
-    <div id="divContainer text-center" class="class=" >
-      <button id="btnBuscar">Buscar</button>
-  </div>
-  <table id="tblData" class="table table-striped table-bordered dt-responsive nowrap">
-      <thead>
-          <tr>
-              <th>CODIGO POSTAL</th>
-              <th>PAIS</th>
-              <th>NOMBRE DEL PAIS</th>
-              <th>CIUDAD</th>
-          </tr>
-      </thead>
-      <tbody>
-
-      </tbody>
-  </table>
 <!--SECCION DESARROLLO De Ejercicios-->
+  
+<section class = "container-fluid my-5">
+<div class="container my-5 text-center"><img src="assets/img/pokeimg.png" class="img-fluid" alt="Listador de Pokemones" width="500" height="500"></div>
+</section>
 
 
+<div data-role="page" id="pokeSearch-page">
+  <div data-role="header" data-theme="b">
+       <h1>Pokeapi Demos</h1>
+  </div>
+  <div data-role="main" class="content">
+  <form id="pokeForm" action="#pokeDetails-page" method="post">
+      <div>
+      <label for="pokeInput">Pokemon name or number:
+      <input type="text" name="pokeInput" id="pokeInput" placeholder="Name/Number" value="">
+      </div>
+      <br>
+      <div>
+      <a class="btn" onclick="pokeSubmit();">Search</a>
+      </div>
+  </form>
+  <div>
+  <ul data-role="listview" data-inset="true" id="pokeDetails">
+  </ul>
+  </div>
+  </div>
+</div>
 
-
-
+ 
+<!--SECCION DESARROLLO De Ejercicios-->
 
 
 <!--SECCION 7 FOOTER -->
@@ -103,6 +107,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
      <!--Mi script-->
-     <script src="assets/js/script.js"></script>
+     <script src="assets/js/pokedex.js"></script>
   </body>
 </html>
