@@ -51,6 +51,12 @@ a:active{
   text-shadow: 0.1em 0.15em 0.15em #000000;
 }
 
+.hero-section2 {
+  text-align-last: center;
+  color: gray;
+  text-shadow: 0.1em 0.15em 0.15em #000000;
+}
+
 .carousel-indicators {
   top: 50px;
 }
