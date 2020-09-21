@@ -100,7 +100,8 @@
     <footer class="hero-section bg-dark text-center text-light p-5 container-fluid" >
       <div id="footer"><p>Jesus Seiler 2020. Todos los derechos reservados. Contacto personal : +56 953292612</p></div>
         
-        
+      <div id="google_translate_element" class="google"></div>
+      <br/>
         <div><button id="cambiar">Cambiar Tamaño de letra Contenido</button></div>
 
 
@@ -117,5 +118,11 @@
 
      <!--Mi script-->
      <script src="assets/js/pokedex.js"></script>
+     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+     <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'ca,eu,gl,en,fr,it,pt,de', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true}, 'google_translate_element');
+              }
+      </script>
   </body>
 </html>

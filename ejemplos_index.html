@@ -50,15 +50,16 @@
 
 
     <section class="container-fluid my-5 p-5 bg-dark ">
-      <div id="ejercicio1"><h2 class="display-4 text-center font-weight-bold text-light mb-3 header-section1 container-fluid">Ejercicios : Certificación de Talento Digital</h2></div>
+      <div id="ejercicio1"><h4 class="display-4 text-center font-weight-bold text-light mb-3 header-section1 container-fluid">Ejercicios : Certificación de Talento Digital</h4></div>
     </section>
 
 
     
     <section class="container-fluid my-5 p-5 bg-dark ">
     
-    <a class="btn btn-dark nav-link  text-light btn-lg" href="pokemon.html">Pokemon</a>
-    <a class="btn btn-dark nav-link  text-light btn-lg" href="ejemplos.html">Ejemplo lista Ciudades</a>
+    <a class="btn btn-dark nav-link  text-light btn-lg" href="pokemon.html">Ajax-JQuery-API Pokemon</a>
+    <a class="btn btn-dark nav-link  text-light btn-lg" href="ejemplos.html">Ajax-JQuery-API lista ciudades</a>
+    <a class="nav-link  text-light text-center"><p> Pronto subire mas información, de momento mi Github tiene el resto de mis proyectos.</p></a>
     </section>
 
 
@@ -67,7 +68,8 @@
     <footer class="hero-section bg-dark text-center text-light p-5 container-fluid" >
       <div id="footer"><p>Jesus Seiler 2020. Todos los derechos reservados. Contacto personal : +56 953292612</p></div>
         
-        
+      <div id="google_translate_element" class="google"></div>
+      <br/>
         <div><button id="cambiar">Cambiar Tamaño de letra Contenido</button></div>
 
 
@@ -84,5 +86,13 @@
 
      <!--Mi script-->
      <script src="assets/js/script.js"></script>
+
+     <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'ca,eu,gl,en,fr,it,pt,de', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true}, 'google_translate_element');
+              }
+      </script>
+      
+      <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   </body>
 </html>
