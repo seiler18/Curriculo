@@ -59,14 +59,62 @@ a:active{
   text-shadow: 0.1em 0.15em 0.15em #000000;
 }
 
-.carousel-indicators {
-  top: 50px;
+/* .carousel {
+  width: 100%;
+  overflow: scroll;
+  padding: 30px;
+  position: relative;
 }
 
-.carousel-indicators li {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
+.carousel__container  {
+  white-space: nowrap;
+  margin: 70px 0px ;
+  padding-bottom: 10px ;
 }
+
+.carousel-item{
+  background-color: blue;
+  width: 200px  ;
+  height: 250px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-right: 10px  ;
+  display: inline-block;
+  cursor: pointer;
+transition: 600ms all;
+transform-origin: center left;
+position: relative;
+}
+
+.carousel__container:hover ~ .carousel-item{
+  transform: translate3d(100px,0,0) ;
+
+}
+.carousel__container:hover .carousel-item{
+  opacity: 0.3 ;
+}
+.carousel__container:hover .carousel-item:hover{
+  transform: scale(1.5) ;
+}
+
+.carousel-item__img{
+  width: 250px;
+  height: 300px ;
+  object-fit: cover;
+}
+
+.carousel-item__details{
+  background: linear-gradient(to top, rgba(0,0,0,0.9)0%,rgba(0,0,0,0)100%);
+font-size: 10px ;
+opacity: 1;
+transition: 500ms opacity;
+padding: 10px;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+
+; */
 
 
