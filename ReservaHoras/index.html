@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Formulario de Reserva</title>
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header>
+<div class="contenedor-inputs"><img  src="../assets/img/Firma.png"></div>
+    <h1>Formulario de Reserva de Hora</h1>
+</header>
+    <form class="form-register">
+
+        <div class="contenedor-inputs">
+            <input type="text" id="rut" name="rut" placeholder="RUT - DV " class="inputcss">
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="inputcss">
+            <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" class="inputcss">
+            <input type="text" id="edad" name="edad" placeholder="Edad" class="inputcss">
+            <input type="email" id="correo" name="correo" placeholder="Correo@.com" class="inputcss">
+            <select type="text" id="especialidad" name="especialidad" placeholder="Especialidad" class="inputcss">
+    
+                <option value=>Seleccione Especialidad</option>
+                <option value="Traumatologia">Traumatologia</option>
+                <option value="Radiologia">Radiologia</option>
+                <option value="Dentista">Dentista</option>
+                <option value="Pediatria">Pediatria</option>
+                </select>
+            <input type="text" id="fecha" name="fecha" placeholder="dd/mm/aaaa" class="inputcss">
+
+            <select type="text" id="hora" name="hora" placeholder="Hora" class="inputcss">
+                <option value=>Seleccione Hora Disponible</option>
+                <option value="08:00">08:00</option>
+                <option value="12:00">12:00</option>
+                <option value="14:00">14:00</option>
+                <option value="16:00">16:00</option>
+                </select>
+
+            <input type="submit" id="box" value="Reservar" class="btn-enviar">
+            <input type="button" onclick="location.href='../ejemplos_index.html'" id="ejercicios" value="Volver a Ejercicios" class="btn-enviar">
+        </div>
+
+    </form>
+
+
+    <script type="text/javascript" src="arrays.js"></script>
+</body>
+
+</html>
