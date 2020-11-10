@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario de Validación</title>
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body><header>
+    <div class="contenedor-inputs"><img  src="../assets/img/Firma.png"></div>
+    <h1>Formulario de registro</h1>
+</header>
+    <form class="form-register" onsubmit="return validar();">
+        <div class="contenedor-inputs">
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="inputcss">
+            <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" class="inputcss">
+            <input type="email" id="correo" name="correo" placeholder="Correo" class="inputcss">
+            <input type="text" id="usuario" name="usuario" placeholder="Usuario" class="inputcss">
+            <input type="password" id="pass" name="pass" placeholder="Contraseña" class="inputcss">
+            <input type="text" id="telefono" name="telefono" placeholder="Teléfono (911111111)" class="inputcss">
+            <input type="submit" value="Registrar" class="btn-enviar">
+            <input type="button" onclick="location.href='../ejemplos_index.html'" id="ejercicios" value="Volver a Ejercicios" class="btn-enviar">
+        </div>
+    </form> 
+    
+ <script type="text/javascript" src="validar.js"></script>   
+</body>
+</html>
