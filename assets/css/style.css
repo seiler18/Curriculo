@@ -10,6 +10,12 @@ body {
   text-align: center;
 }
 
+.certificados{
+  font-size: xx-large;
+}
+.experiencias{
+  font-size: xx-large;
+}
 header {
   background-image: url('../img/header.jpg');
   background-repeat: no-repeat;
