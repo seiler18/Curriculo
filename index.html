@@ -57,19 +57,20 @@
 
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
-            <li1 class="nav-item">
+            <div class="nav-item">
               <a class="nav-link hero-section text-light" href="#about">Acerca de mí</a>
-            </li1>
-            <li1 class="nav-item">
-              <a class="nav-link hero-section text-light" href="#work">Experiencia</a>
-            </li1>
-            <li1 class="nav-item">
+              
+            </div>
+            <div class="nav-item">
+              <a class="nav-link hero-section text-light" href="#Experiencia" id="mostrarExperiencia">Experiencia</a>
+            </div>
+            <div class="nav-item">
               <a class="nav-link hero-section text-light" href="#contact">Contacto</a>
-            </li1>
-            <li1 class="nav-item">
-              <a class="nav-link hero-section text-light" href="#Certificados">Certificados</a>
-            </li1>
-           <li1 class="dropdown text-light">
+            </div>
+            <div class="nav-item">
+              <a class="nav-link hero-section text-light" href="#Certificados" id="mostrarCertificados">Certificados</a>
+            </div>
+           <div class="dropdown text-light">
               <a href="#" class="dropdown-toggle nav-link hero-section text-light " data-toggle="dropdown">
                 Mis aplicaciones
               </a>
@@ -88,17 +89,17 @@
                 <li><a class="btn btn-dark nav-link  text-light"  href="./desafio/index.html">Aprendiendo Media Queries</a></li>
               
               </ul>
-            </li1>
+            </div>
           </ul>
           
-            <li1>
+            <div>
             <a class="nav-link hero-section text-light" target="_blank" href="Curriculo.pdf" download="Curriculo Jesus Seiler">
               <b>Descargar Curriculo</b>
-              </a></li1>
+              </a></div>
 
-              <li1>
+              <div>
                 <div id="google_translate_element" class="nav-link hero-section text-light google">
-              </div></li1>
+              </div></div>
           
         </div>
       </div>
@@ -226,8 +227,9 @@
 
 
 <!--SECCION 2 MI EXPERIENCIA LABORAL-->
-<section class="container-fluid my-5 p-5 bg-dark" id="work">
-  <h2 class="text-center font-weight-bold text-light  header-section1 mb-5">Mi experiencia laboral</h2>
+<button type="button" class="container-fluid btn-info "><a href="#Experiencia"><div class="experiencias text-center font-weight-bold text-light  header-section1" id="Ocultar2">Mi experiencia laboral</div></a></button>
+<section class="container-fluid my-5 p-5 bg-dark" id="Experiencia">
+  
   <div class="card-deck">
     
 
@@ -526,9 +528,9 @@ facturaciones pendientes. Realizar y cobrar cheques de gerencia, entre otras fun
 
 
 <!--SECCION 4 CERTIFICADOS -->
-    <section class="container-fluid my-5 p-5 bg-dark" id="Certificados">
-      <h2 class=" text-center font-weight-bold text-light header-section1 mb-5">Certificados Obtenidos</h2>
-      
+    
+<button type="button" class="container-fluid btn-info "><a href="#Certificados"><div class="certificados text-center font-weight-bold text-light header-section1" id="Ocultar">Certificados Obtenidos</div></a></button>
+      <section class="container-fluid my-5 p-5 bg-dark" id="Certificados">
       <div class="card-deck">
 
         <div class="card">
@@ -1020,8 +1022,8 @@ facturaciones pendientes. Realizar y cobrar cheques de gerencia, entre otras fun
 
 <!--SECCION 7 FOOTER -->
 <section id="contact">
-    <footer class="hero-section bg-dark text-center text-light p-5">
-      <div class="container text-center hero-section text-light " id="footer">
+    <footer class="hero-section bg-dark text-center text-light p-5 " id="footer">
+      <div class="container text-center hero-section text-light " >
         
           <div class="p-4 text-center">
             <h1 class="font-weight-bold text-center">Mis redes sociales </h1>
@@ -1039,17 +1041,17 @@ facturaciones pendientes. Realizar y cobrar cheques de gerencia, entre otras fun
       </div>
       <br/>
       <a href="https://api.whatsapp.com/send?phone=+56953292612" target="_blank"> <span>Contactar via WhatsApp &nbsp;</span><i class="fab fa-whatsapp fa-2x" data-content="WS Jesus Seiler"></i></a>
-      <p><a href="mailto:ichbinseiler@gmail.com" target="_blank"> <span>Contactar por Gmail&nbsp;</span></a><i class="fab fa-google fa-2x"></i> </p>
-    <div><br/></div>
+      <p><a href="mailto:ichbinseiler@gmail.com" target="_blank"> <span>Contactar por Gmail&nbsp;</span><i class="fab fa-google fa-2x"></i> </a></p>
+   
     
       <div><p>©Jesús Seiler 2020. Todos los derechos reservados. </p></div>
-      <br/>
-        <div><button id="cambiar">Cambiar Tamaño de letra Contenido</button></div>
-        <br/><p>Contador de visitas</p>
+      
+        <div><button type="button" class="btn btn-outline-info hero-section text-light" id="cambiarTamano">Cambiar Tamaño de letra Contenido</button></div>
+        <br/>
         <a href="https://www.easycounter.com/es/">
           <img src="https://www.easycounter.com/counter.php?seiler18" 
            alt="Contador"></a>
-          <br>
+          
       
     </footer>
   </section>
