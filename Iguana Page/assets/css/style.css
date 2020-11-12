@@ -234,10 +234,10 @@ h5 {
   height: 70px;
   position: relative;
 }
+
 .final .textofinal{
-  position: absolute;
-  left: 30%;
-  top: 35%;
+  padding: 20px;
+ align-content: center;
   font: Light 20px/24px Raleway;
   letter-spacing: 0;
   color: #FFFFFF;
