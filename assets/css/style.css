@@ -11,7 +11,15 @@ list-style-image: url("../img/tickicon1.png");
 .center {
   text-align: center;
 }
-
+.botonMostrarConocimientos{
+  border: 5px solid black;
+}
+.botonMostrarExperiencias{
+  border: 5px solid black;
+}
+.botonMostrarCertificados{
+  border: 5px solid black;
+}
 .certificados {
   font-size: xx-large;
 }
@@ -70,6 +78,17 @@ a:hover {
 a:active {
   color: black;
 }
+.progress{
+font-weight: bold;
+font-size: 17px;
+-webkit-text-stroke: 0.5px rgb(0, 0, 0);
+}
+.conocimientos{
+font-weight: bold;
+font-size: 30px;
+-webkit-text-stroke: 2px rgb(0, 0, 0);
+}
+
 
 .header-section2 {
   text-align: center;
@@ -89,6 +108,24 @@ a:active {
   color: gray;
   text-shadow: 0.1em 0.15em 0.15em #000000;
 }
+
+.card-deck{
+  width: 100%  ;
+  margin: auto;
+}
+
+.slider{
+  size: 5px;
+  margin:auto;
+}
+.slider ul{
+  display: flex;
+  padding: 0;
+}
+.slider li{
+  list-style: none;
+}
+
 
 /* .carousel {
   width: 100%;
