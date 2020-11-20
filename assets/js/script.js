@@ -13,6 +13,19 @@ $("#cambiarTamano").click(function() {
     /* $(this).hide().delay(1500); */
 });
 
+//para que inicie la pagina con los conocimientos ocultos
+$(document).ready(function() {
+    $("#Conocimiento").hide();
+    $("#Ocultar3").click(function(){
+        $("#Conocimiento").show();
+    });
+    /* $(this).hide().delay(1500); */
+});
+
+//para mostrar el conocimiento dando click en el navbar
+$("#mostrarConocimiento").click(function() {
+    $("#Conocimiento").show();
+});
 
 //para que inicie la pagina con los certificados ocultos
 $(document).ready(function() {

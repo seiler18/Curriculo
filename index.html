@@ -16,7 +16,7 @@
     <meta charset="utf-8">
     <title>Curriculo Jesús Seiler </title>
     <meta name="viewport" content="width=device-width, initial-scale=0.7">
-    <link rel="shortcut icon" type="image/png" href="assets/img/1.jpg">
+    <link rel="shortcut icon" type="image/png" href="./assets/img/LOGO JESUS SEILER.png">
     <!--META TAGS PARA FACEBOOK Y BUSCADORES-->
     <meta property="og:title" content="Curriculo Jesús Seiler" />
     <meta property="og:description" content="Curriculo de Jesus Seiler, certificados , experiencias y aplicaciones desarrolladas" />      
@@ -48,7 +48,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container-fluid">
 
-        <h1 class="hero-section text-light ">Jesús Seiler</h1>
+        <h1><a class="hero-section text-light" href="#" id="Index">Jesus Seiler</a></h1>
 
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,6 +63,9 @@
             </div>
             <div class="nav-item">
               <a class="nav-link hero-section text-light" href="#Experiencia" id="mostrarExperiencia">Experiencia</a>
+            </div>
+            <div class="nav-item">
+              <a class="nav-link hero-section text-light" href="#Conocimiento" id="mostrarConocimiento">Conocimientos</a>
             </div>
             <div class="nav-item">
               <a class="nav-link hero-section text-light" href="#contact">Contacto</a>
@@ -109,15 +112,19 @@
 
 
 <!--SECCION  BANNER DE PRESENTACIÒN-->
-    <header class="hero text-light text-right pt-5 mt-5">
+    <header class="hero text-light pt-5 mt-5">
+      <div class="container-fluid">
       
-      <div class="container">
-        <p><h2 class="display-4 font-weight-bold header-section1 my-2">Innovar es la clave del éxito <br>actualizarse es necesario.</h2></p>
-        <p class="font-weight-bold my-5 text-right header-section2">Bienvenidos a mi perfil laboral, les invito a leer mis referencias, trabajos y proyectos realizados.
+     
+        <img class="logo" src="./assets/img/LOGO JESUS SEILER.png"><p><h2 class="display-4 font-weight-bold text-left header-section1 my-2">Innovar es la clave del éxito <br>actualizarse es necesario.</h2></p>
+      </div>
+        
+        <div class="container-fluid"><p class="font-weight-bold  text-left my-5 header-section2">Bienvenidos a mi perfil laboral, les invito a leer mis referencias, trabajos y proyectos realizados.
           Ingeniero Civil y certificado por Talento Digital como "Programador Full Stack Java"
         </p>
-        
-      </div>
+        </div>
+
+      
     
     </header>
 <!--SECCION  BANNER DE PRESENTACIÒN-->
@@ -172,48 +179,44 @@
 
 
 <!--SECCION 1.5 CONTENIDO ACERCA DE MIS CONOCIMIENTOS PROGRAMACION la seccion es por si en un futuro hago otro nav y lo necesito llamar-->
-<section id="programacion" class="container text-center ">
+<button type="button" id="botonMostrarConocimientos" class="container-fluid btn-info "><a href="#Conocimiento"><h3 class="conocimientos text-light my-3 " id="Ocultar3">Conocimientos de programación adquiridos en el ultimo año</h3></a></button>
 
-
- 
-
-    
-      <i class="fas fa-file-code fa-3x my-3"></i>
-      <h3 class="my-3">Conocimientos de programación adquiridos en el ultimo año</h3>
-      <p class="my-3"><ul>
+<section id="Conocimiento" class="container text-center"> 
+  <i class="fas fa-file-code fa-3x my-3"></i>
+      <p class="my-3 "><ul>
         <div class="progress" style="height: 40px;">
-          <div class="progress-bar progress-bar-striped progress-bar-animated bg-info"  role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">HTML5 & CSS3 <b>Consolidado</b></div>
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-info"  role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">HTML5 & CSS3 <b></b></div>
         </div>
 
         <div class="progress" style="height: 40px;">
-          <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar" style="width: 78%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">Spring Framework & Spring Boot (Java) <b>En desarrollo</b> </div>
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Spring Framework & Spring Boot (Java) <b></b> </div>
         </div>
         
         <div class="progress" style="height: 40px;"> 
-          <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">JQuery & JavaScript <b>En desarrollo</b> </div>
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">JQuery & JavaScript <b></b> </div>
         </div>
 
 
          <div class="progress" style="height: 40px;">
-          <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar"  style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">Base de datos SQL (Oracle y PostgreSQL) <b>Consolidado</b></div>
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar"  style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Base de datos SQL (Oracle y PostgreSQL) <b></b></div>
         </div>
 
 
         <div class="progress" style="height: 40px;">
-          <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar"  style="width: 68%" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100"> React & NodeJS  <b>En desarrollo</b></div>
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar"  style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"> React & NodeJS  <b></b></div>
         </div>
 
 
         <div class="progress" style="height: 40px;">
-          <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">XML <b>En desarrollo</b> </div>
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">XML <b></b> </div>
         </div>
 
         <div class="progress" style="height: 40px;">
-          <div class="progress-bar progress-bar-striped progress-bar-animated bg-info " role="progressbar" style="width: 79%" aria-valuenow="79" aria-valuemin="0" aria-valuemax="100">JSP (Java Server Pages) & Servlets <b>Avanzado</b> </div>
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-info " role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">JSP (Java Server Pages) & Servlets <b></b> </div>
         </div>
 
         <div class="progress" style="height: 40px;">
-          <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar"  style="width: 45%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"> Python & DJANGO <b>Iniciado</b></div>
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar"  style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"> Python & DJANGO <b></b></div>
         </div>
         <br/></ul></p>
     
@@ -228,7 +231,7 @@
 
 
 <!--SECCION 2 MI EXPERIENCIA LABORAL-->
-<button type="button" class="container-fluid btn-info "><a href="#Experiencia"><div class="experiencias text-center font-weight-bold text-light  header-section1" id="Ocultar2">Mi experiencia laboral</div></a></button>
+<button type="button" id="botonMostrarExperiencias" class="container-fluid btn-info "><a href="#Experiencia"><div class="experiencias text-center font-weight-bold text-light  header-section1" id="Ocultar2">Mi experiencia laboral</div></a></button>
 <section class="container-fluid my-5 p-5 bg-dark" id="Experiencia">
   
   <div class="card-deck">
@@ -530,8 +533,16 @@ facturaciones pendientes. Realizar y cobrar cheques de gerencia, entre otras fun
 
 <!--SECCION 4 CERTIFICADOS -->
     
-<button type="button" class="container-fluid btn-info "><a href="#Certificados"><div class="certificados text-center font-weight-bold text-light header-section1" id="Ocultar">Certificados Obtenidos</div></a></button>
+
+
+
+
+
+
+<button type="button" id="botonMostrarCertificados" class="container-fluid btn-info "><a href="#Certificados"><div class="certificados text-center font-weight-bold text-light header-section1" id="Ocultar">Certificados Obtenidos</div></a></button>
       <section class="container-fluid my-5 p-5 bg-dark" id="Certificados">
+
+      
       <div class="card-deck">
 
         <div class="card">
@@ -654,7 +665,7 @@ facturaciones pendientes. Realizar y cobrar cheques de gerencia, entre otras fun
         </div>
         
 
-      </div>
+      </div> 
 
       
     </section>
