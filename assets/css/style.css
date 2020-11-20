@@ -89,7 +89,10 @@ font-size: 30px;
 -webkit-text-stroke: 2px rgb(0, 0, 0);
 }
 
-
+.logo{
+  width: 20%;
+float: right;
+}
 .header-section2 {
   text-align: center;
   
