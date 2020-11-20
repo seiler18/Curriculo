@@ -5,7 +5,9 @@ body {
   font-size: small;
   font-size: calc(1em + 1vw);
 }
-
+ul li{
+list-style-image: url("../img/tickicon1.png");
+}
 .center {
   text-align: center;
 }
@@ -24,6 +26,8 @@ header {
   padding-bottom: 22rem;
   animation: header 15s infinite;
 }
+
+
 @keyframes header {
   0%,
   25% {
