@@ -100,7 +100,6 @@ float: right;
 
 .header-section2 {
   text-align: center;
-  
   font-size: xx-large;
   -webkit-text-stroke: 2px rgb(0, 0, 0);
   color: rgb(255, 255, 255);
@@ -108,6 +107,12 @@ float: right;
 .hero-section {
   text-align: left;
   color: gray;
+  text-shadow: 0.1em 0.15em 0.15em #000000;
+}
+
+.titulo {
+  text-align: center;
+  color: black;
   text-shadow: 0.1em 0.15em 0.15em #000000;
 }
 
