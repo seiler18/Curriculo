@@ -22,6 +22,9 @@ list-style-image: url("../img/tickicon1.png");
 #mostrarProyectos{
   border: 2px solid black;
   border-radius: 100px;
+  margin-left: 300px;
+  width: 200px;
+  height: 200px;
 }
 #botonMostrarCertificados{
   border: 2px solid black;
@@ -37,7 +40,7 @@ header {
   background-image: url("../img/header.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: left;
   padding-bottom: 22rem;
   animation: header 15s infinite;
 }
