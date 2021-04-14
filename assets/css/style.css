@@ -11,14 +11,24 @@ list-style-image: url("../img/tickicon1.png");
 .center {
   text-align: center;
 }
-.botonMostrarConocimientos{
-  border: 5px solid black;
+#botonMostrarConocimientos{
+  border: 2px solid black;
+  border-radius: 100px;
 }
-.botonMostrarExperiencias{
-  border: 5px solid black;
+#botonMostrarExperiencias{
+  border: 2px solid black;
+  border-radius: 100px;
 }
-.botonMostrarCertificados{
-  border: 5px solid black;
+#mostrarProyectos{
+  border: 2px solid black;
+  border-radius: 100px;
+  margin-left: 400px;
+  width: 200px;
+  height: 200px;
+}
+#botonMostrarCertificados{
+  border: 2px solid black;
+  border-radius: 100px;
 }
 .certificados {
   font-size: xx-large;
@@ -30,7 +40,7 @@ header {
   background-image: url("../img/header.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: right;
+  background-position: center;
   padding-bottom: 22rem;
   animation: header 15s infinite;
 }
