@@ -13,21 +13,19 @@ list-style-image: url("../img/tickicon1.png");
 }
 #botonMostrarConocimientos{
   border: 2px solid black;
-  border-radius: 100px;
+  border-radius: 50px;
 }
 #botonMostrarExperiencias{
   border: 2px solid black;
-  border-radius: 100px;
+  border-radius: 50px;
 }
 #mostrarProyectos{
   border: 2px solid black;
   border-radius: 100px;
-  width: 200px;
-  height: 200px;
 }
 #botonMostrarCertificados{
   border: 2px solid black;
-  border-radius: 100px;
+  border-radius: 50px;
 }
 .certificados {
   font-size: xx-large;
