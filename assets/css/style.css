@@ -22,9 +22,6 @@ list-style-image: url("../img/tickicon1.png");
 #mostrarProyectos{
   border: 2px solid black;
   border-radius: 100px;
-  margin-left: 300px;
-  width: 200px;
-  height: 200px;
 }
 #botonMostrarCertificados{
   border: 2px solid black;
