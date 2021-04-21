@@ -1,0 +1,7 @@
+ exiftool -Title="Curriculo de Jesus Seiler" Curriculo.pdf 
+ exiftool -Description="https://seiler18.github.io/Curriculo/" Curriculo.pdf
+exiftool -Subject="JESUS ENRIQUE SEILER VELASQUEZ" Curriculo.pdf
+exiftool -Author="JESUS ENRIQUE SEILER VELASQUEZ" Curriculo.pdf
+exiftool -Creator="JESUS ENRIQUE SEILER VELASQUEZ" Curriculo.pdf
+
+exiftool -lang es Curriculo.pdf
