@@ -117,6 +117,17 @@ float: right;
   text-shadow: 0.1em 0.15em 0.15em #000000;
 }
 
+.bienvenidosTEXT{
+  text-align: left;
+  color: black;
+  -webkit-text-stroke: 1.5px black;
+  color: white;
+}
+.bienvenidosIMG{
+ position: absolute;
+width: 250px; height: 60px;
+}
+
 .titulo {
   text-align: center;
   color: black;
