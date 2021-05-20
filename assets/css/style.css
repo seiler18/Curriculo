@@ -1,5 +1,6 @@
 body {
   font-family: "Raleway", sans-serif;
+  background-color: black;
 }
 .h6 {
   font-size: small;
@@ -7,17 +8,36 @@ body {
 }
 ul li{
 list-style-image: url("../img/tickicon1.png");
+color: white;
+text-shadow: 0.1em 0.15em 0.15em #000000;
 }
+
+h1,h2,h3{
+
+color: white;
+text-shadow: 0.1em 0.15em 0.15em #000000;
+}
+
+.dropdown-menu{
+  background-color: black;
+}
+
 .center {
   text-align: center;
 }
 #botonMostrarConocimientos{
   border: 2px solid black;
- 
+  background: #0f0c29;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
 }
 #botonMostrarExperiencias{
   border: 2px solid black;
-
+  background: #0f0c29;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
 }
 #mostrarProyectos{
   border: 2px solid black;
@@ -25,13 +45,26 @@ list-style-image: url("../img/tickicon1.png");
 }
 #botonMostrarCertificados{
   border: 2px solid black;
+  background: #0f0c29;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   
 }
 .certificados {
-  font-size: xx-large;
+  font-weight: bold;
+font-size: 30px;
+-webkit-text-stroke: 2px rgb(0, 0, 0);
+color: white;
+text-shadow: 0.1em 0.15em 0.15em #000000;
 }
 .experiencias {
-  font-size: xx-large;
+  font-weight: bold;
+font-size: 30px;
+-webkit-text-stroke: 2px rgb(0, 0, 0);
+
+color: white;
+text-shadow: 0.1em 0.15em 0.15em #000000;
 }
 header {
   background-image: url("../img/header.jpg");
@@ -79,11 +112,11 @@ a {
 }
 
 a:hover {
-  color: black;
+  color: whitesmoke;
 }
 
 a:active {
-  color: black;
+  color: whitesmoke;
 }
 .progress{
 font-weight: bold;
@@ -113,7 +146,7 @@ float: right;
 }
 .hero-section {
   text-align: left;
-  color: gray;
+  color: black;
   text-shadow: 0.1em 0.15em 0.15em #000000;
 }
 
@@ -130,7 +163,7 @@ width: 250px; height: 60px;
 
 .titulo {
   text-align: center;
-  color: black;
+  color: whitesmoke;
   text-shadow: 0.1em 0.15em 0.15em #000000;
 }
 
