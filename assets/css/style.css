@@ -30,26 +30,37 @@ text-shadow: 0.1em 0.15em 0.15em #000000;
   background: #0f0c29;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
+  border-style: solid;
+  border-color: gray;
 }
 #botonMostrarExperiencias{
   border: 2px solid black;
   background: #0f0c29;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
+  border-style: solid;
+  border-color: gray;
 }
 #mostrarProyectos{
   border: 2px solid black;
   border-radius: 100px;
+  border-style: solid;
+  border-color: gray;
 }
 #botonMostrarCertificados{
   border: 2px solid black;
   background: #0f0c29;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+border-style: solid;
+border-color: gray;
   
+}
+
+#about{
+  border-style: solid;
+  border-color: gray;
+  border-radius: 80px;
 }
 .certificados {
   font-weight: bold;
