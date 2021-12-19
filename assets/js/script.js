@@ -10,9 +10,19 @@ $("#cambiarTamano").click(function() {
     $("#cambiarTamano").click(function(){
     $("#footer").animate({fontSize:'1em'},1500);
 });
-    /* $(this).hide().delay(1500); */
+
 });
 
+$(document).ready(function() {
+    $("#SAPConocimientos").hide();
+    $("#MostrarSAP").click(function(){
+        $("#SAPConocimientos").show();
+        $("#MostrarSAP").click(function(){
+            $("#SAPConocimientos").hide();
+        });
+    });
+    
+});
 //para que inicie la pagina con los conocimientos ocultos
 $(document).ready(function() {
     $("#Conocimiento").hide();
