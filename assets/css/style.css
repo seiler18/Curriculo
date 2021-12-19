@@ -6,6 +6,11 @@ body {
   font-size: small;
   font-size: calc(1em + 1vw);
 }
+
+.SAP{
+  color:#302b63
+}
+
 ul li{
 list-style-image: url("../img/tickicon1.png");
 color: white;
@@ -174,8 +179,9 @@ width: 250px; height: 60px;
 
 .titulo {
   text-align: center;
-  color: whitesmoke;
+  color: blue;
   text-shadow: 0.1em 0.15em 0.15em #000000;
+  font-weight: bolder;
 }
 
 .hero-section2 {
