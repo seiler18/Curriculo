@@ -27,42 +27,54 @@ $(document).ready(function() {
 $(document).ready(function() {
     $("#Conocimiento").hide();
     $("#Ocultar3").click(function(){
-        $("#Conocimiento").show();
+        $("#Conocimiento").toggle();
     });
-    /* $(this).hide().delay(1500); */
+});
+
+$(document).ready(function() {
+    $("#carta-trabajo").hide();
+    $("#OcultarCartaTrabajo").click(function(){
+        $("#carta-trabajo").toggle();
+    });
+});
+
+$(document).ready(function() {
+    $("#certificados-nestle").hide();
+    $("#OcultarCertificadosNestle").click(function(){
+        $("#certificados-nestle").toggle();
+    });
 });
 
 //para mostrar el conocimiento dando click en el navbar
 $("#mostrarConocimiento").click(function() {
-    $("#Conocimiento").show();
+    $("#Conocimiento").toggle();
 });
 
 //para que inicie la pagina con los certificados ocultos
 $(document).ready(function() {
     $("#Certificados").hide();
     $("#Ocultar").click(function(){
-        $("#Certificados").show();
+        $("#Certificados").toggle();
     });
     /* $(this).hide().delay(1500); */
 });
 
 //para mostrar el certificado dando click en el navbar
 $("#mostrarCertificados").click(function() {
-    $("#Certificados").show();
+    $("#Certificados").toggle();
 });
 
 //para que inicie la pagina con las experiencias ocultas
 $(document).ready(function() {
     $("#Experiencia").hide();
     $("#Ocultar2").click(function(){
-        $("#Experiencia").show();
+        $("#Experiencia").toggle();
     });
-    /* $(this).hide().delay(1500); */
 });
 
 //para mostrar las experiencias dando click en el navbar
 $("#mostrarExperiencia").click(function() {
-    $("#Experiencia").show();
+    $("#Experiencia").toggle();
 });
 
 
