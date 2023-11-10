@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Analizador de imagenes </title>
+    <meta name="viewport" content="width=device-width, initial-scale=0.7">
+    <link rel="shortcut icon" type="image/png" href="/assets/img/LOGO JESUS SEILER.png">
+    <!--META TAGS PARA FACEBOOK Y BUSCADORES-->
+    <meta property="og:title" content="Curriculo Jesús Seiler" />
+    <meta property="og:description"
+      content="Curriculo de Jesus Seiler, certificados , experiencias y aplicaciones desarrolladas" />
+    <meta property="og:url" content="https://jesusseiler.website/" />
+    <meta property="og:image" content="https://jesusseiler.website/assets/img/Firma.png" />
+    <!--META TAGS PARA FACEBOOK Y BUSCADORES-->
+    <!--META TAGS GENERALES-->
+    <meta name="author" content="Jesus Enrique Seiler Velasquez">
+    <meta name="description"
+      content="Curriculo de Jesus Seiler, certificados , experiencias y aplicaciones desarrolladas">
+    <meta name="keywords"
+      content="trabajo, Curriculos, Curriculo, trabajos, co-work, Desarrollo full stack java, Spring,CSS,HTML5,React,Bootstrap">
+    <!--META TAGS GENERALES-->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+
+  <!--CSS de Bootstrap 4.2.1-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <!--Google Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <!--Mi estilo-->
+  <link rel="stylesheet" href="style.css">
+
+<!--load all Font Awesome styles -->
+<link href="/assets/css/all.css" rel="stylesheet">
+
+
+
+</head>
+<body>
+
+  <h1>Análisis de Imágenes con Computer Vision</h1>
+
+  <label for="imageUrl">URL de la imagen:</label>
+  <input type="text" id="imageUrl" placeholder="Ingrese la URL de la imagen">
+  <br>
+
+  <button id="analyzeButton">Analizar Imagen</button></br>
+
+  <!--añadir otro boton que devuelva al index.html , que el boton este en-->
+</br><button><a href="/index.html">Volver</a></button>
+  <div id="loadingIndicator">Procesando...</div>
+
+  <div id="resultsContainer"></div>
+
+  <script>
+   $(document).ready(function () {
+    // Actualizar el estado del botón de analizar al cambiar el contenido del campo de entrada
+    $('#imageUrl').on('input', function () {
+      const imageUrl = $(this).val();
+      const analyzeButton = $('#analyzeButton');
+
+      // Habilitar el botón solo si la URL no está vacía
+      analyzeButton.prop('disabled', imageUrl.trim() === '');
+    });
+
+    // Deshabilitar el botón al cargar la página si el campo de entrada está vacío
+    const imageUrl = $('#imageUrl').val();
+    $('#analyzeButton').prop('disabled', imageUrl.trim() === '');
+
+    // Manejar el clic en el botón de analizar
+    $('#analyzeButton').on('click', function () {
+      const imageUrl = $('#imageUrl').val();
+
+      // Mostrar indicador de carga
+      $('#loadingIndicator').show();
+  
+        // Realizar la llamada a la API de Computer Vision
+        $.ajax({
+          url: 'https://jsservicepractica.cognitiveservices.azure.com/vision/v3.0/analyze?visualFeatures=Description,Tags',
+          method: 'POST',
+          contentType: 'application/json',
+          headers: {
+            'Ocp-Apim-Subscription-Key': '143a64b2737340f98cb8ade7e062b5e3', // Reemplazar con tu clave
+          },
+          data: JSON.stringify({ url: imageUrl }),
+          success: function (data) {
+            // Ocultar indicador de carga
+            $('#loadingIndicator').hide();
+  
+            // Manejar los resultados aquí
+            console.log('Resultados del análisis:', data);
+  
+            // Mostrar los resultados en el contenedor
+            $('#resultsContainer').html('<h2>Resultados del análisis:</h2><pre class="resultText">' + JSON.stringify(data, null, 2) + '</pre>');
+  
+            // Mostrar la imagen analizada
+            if (data.description && data.description.captions && data.description.captions[0]) {
+              const analyzedImageUrl = imageUrl; // Reemplazar con la URL de la imagen analizada
+              $('#resultsContainer').append('<img src="' + analyzedImageUrl + '" alt="Imagen Analizada" style="max-width:100%;margin-top:20px;">');
+            }
+          },
+          error: function (error) {
+            console.error('Error en la llamada a la API de Computer Vision:', error);
+            // Ocultar indicador de carga en caso de error
+            $('#loadingIndicator').hide();
+            // Mostrar un mensaje de error al usuario
+            alert('Error en la llamada a la API de Computer Vision. Por favor, verifica la URL de la imagen e inténtalo nuevamente.');
+          }
+        });
+      });
+    });
+  </script>
+  
+
+</body>
+</html>
