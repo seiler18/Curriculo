@@ -49,71 +49,73 @@
 
   <button id="analyzeButton">Analizar Imagen</button></br>
 
-  <!--añadir otro boton que devuelva al index.html , que el boton este en-->
-</br><button><a href="/index.html">Volver</a></button>
+</br><button id="clearButton">Limpiar Resultados</button></br>
+</br><button><a href="/index.html">Volver</a></button></br>
   <div id="loadingIndicator">Procesando...</div>
 
   <div id="resultsContainer"></div>
 
-  <script>
-   $(document).ready(function () {
-    // Actualizar el estado del botón de analizar al cambiar el contenido del campo de entrada
-    $('#imageUrl').on('input', function () {
-      const imageUrl = $(this).val();
-      const analyzeButton = $('#analyzeButton');
+  <!--SECCION 7 FOOTER -->
+  <section id="contact">
+    <div class="container-footer text-light ">
+    <footer class="text-center my-5 text-light" id="footer">
+          <h1 class="font-weight-bold">Mis redes sociales </h1>
+        
 
-      // Habilitar el botón solo si la URL no está vacía
-      analyzeButton.prop('disabled', imageUrl.trim() === '');
-    });
+        <p><a href="https://www.facebook.com/IchBinSeiler" target="_blank"><i class="fab fa-facebook fa-"></i>
+            <span>Facebook&nbsp;</span></a>
+          <a href="https://www.twitte.com/Ich_BinSeiler" target="_blank"><i class="fab fa-twitter fa-"></i>
+            <span>Twitter&nbsp;</span></a></p>
 
-    // Deshabilitar el botón al cargar la página si el campo de entrada está vacío
-    const imageUrl = $('#imageUrl').val();
-    $('#analyzeButton').prop('disabled', imageUrl.trim() === '');
+        <p><a href="https://www.instagram.com/ichbinseiler" target="_blank"><i class="fab fa-instagram fa-"></i>
+            <span>Instagram&nbsp;</span></a>
+          <a href="https://gitlab.com/seiler18" target="_blank"><i class="fab fa-gitlab fa-"></i>
+            <span>Gitlab&nbsp;</span></a></p>
 
-    // Manejar el clic en el botón de analizar
-    $('#analyzeButton').on('click', function () {
-      const imageUrl = $('#imageUrl').val();
+        <a href="https://github.com/seiler18" target="_blank"><i class="fab fa-github fa-"></i>
+          <span>Github&nbsp;</span></a>
+        <a href="https://www.linkedin.com/in/ichbinseiler/" target="_blank"><i class="fab fa-linkedin fa-"></i>
+          <span>LinkedIn&nbsp;</span></a>
 
-      // Mostrar indicador de carga
-      $('#loadingIndicator').show();
-  
-        // Realizar la llamada a la API de Computer Vision
-        $.ajax({
-          url: 'https://jsservicepractica.cognitiveservices.azure.com/vision/v3.0/analyze?visualFeatures=Description,Tags',
-          method: 'POST',
-          contentType: 'application/json',
-          headers: {
-            'Ocp-Apim-Subscription-Key': '143a64b2737340f98cb8ade7e062b5e3', // Reemplazar con tu clave
-          },
-          data: JSON.stringify({ url: imageUrl }),
-          success: function (data) {
-            // Ocultar indicador de carga
-            $('#loadingIndicator').hide();
-  
-            // Manejar los resultados aquí
-            console.log('Resultados del análisis:', data);
-  
-            // Mostrar los resultados en el contenedor
-            $('#resultsContainer').html('<h2>Resultados del análisis:</h2><pre class="resultText">' + JSON.stringify(data, null, 2) + '</pre>');
-  
-            // Mostrar la imagen analizada
-            if (data.description && data.description.captions && data.description.captions[0]) {
-              const analyzedImageUrl = imageUrl; // Reemplazar con la URL de la imagen analizada
-              $('#resultsContainer').append('<img src="' + analyzedImageUrl + '" alt="Imagen Analizada" style="max-width:100%;margin-top:20px;">');
-            }
-          },
-          error: function (error) {
-            console.error('Error en la llamada a la API de Computer Vision:', error);
-            // Ocultar indicador de carga en caso de error
-            $('#loadingIndicator').hide();
-            // Mostrar un mensaje de error al usuario
-            alert('Error en la llamada a la API de Computer Vision. Por favor, verifica la URL de la imagen e inténtalo nuevamente.');
-          }
-        });
-      });
-    });
+      
+      <br />
+      <a href="https://api.whatsapp.com/send?phone=+56953292612" target="_blank"> <span>Contactar via WhatsApp
+          &nbsp;</span><i class="fab fa-whatsapp fa-2x" data-content="WS Jesus Seiler"></i></a>
+      <p><a href="mailto:ichbinseiler@gmail.com" target="_blank"> <span>Contactar por Gmail&nbsp;</span><i
+            class="fab fa-google fa-2x"></i> </a></p>
+
+
+      
+        <p>©Jesús Seiler 2023. Todos los derechos reservados. </p>
+      
+
+<!--       <button type="button" class="btn btn-outline-info hero-section text-light" id="cambiarTamano">Cambiar Tamaño
+          de letra Contenido</button>
+      <br /> --> <!-- por si quiero cambiar el tamaño del foteer puedo ocupar este boton junto a jquery -->
+      </div>
+      
+
+    </footer>
+  </section>
+  <!--SECCION 7 footer -->
+
+  <!--Mi script-->
+  <script src="script.js"></script>
+  <!--Ajax-->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+  <!--jQuery 3.3.1 -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+  <!--Popper JS 1.14.3-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
   </script>
-  
 
+  <!--Bootstrap JS 4.2.1-->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+  </script>
 </body>
 </html>

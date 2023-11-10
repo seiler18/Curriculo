@@ -28,16 +28,18 @@ body {
   
   button {
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: #083dcf;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    text-shadow: 0.1em 0.15em 0.15em #000000;
   }
 
   button a {
     color: white;
     text-decoration: none;
+    text-shadow: 0.1em 0.15em 0.15em #000000;
   }
   button a:hover {
     color: white; /* Cambia el color del texto cuando el enlace está en estado :hover */
@@ -64,3 +66,25 @@ body {
     color: #ffffff; /* Color de fuente blanco para el indicador de carga */
   }
   
+
+  a {
+    color: white;
+    text-shadow: 0.1em 0.15em 0.15em #000000;
+  }
+  
+  a:hover {
+    color: whitesmoke;
+    text-decoration: none;
+  }
+  
+  a:active {
+    color: whitesmoke;
+  }
+
+  .container-footer{
+    display: flexbox;
+    align-items: center; /* Alinea verticalmente los elementos dentro del contenedor */
+    background-image: url('/assets/img/vector.png');
+    background-size:cover;
+    background-position: center;
+  }
