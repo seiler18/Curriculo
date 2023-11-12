@@ -75,7 +75,7 @@ border-color: gray;
   border-style: double;
   border-color: gray;
   border-radius: 80px;
-  background-image: url('/assets/img/acercademi.jpg');
+  background-image: url('../img/acercademi.jpg');
   background-size: cover; 
   background-position: center;
 }
@@ -84,7 +84,7 @@ border-color: gray;
   border-style: double;
   border-color: gray;
   border-radius: 80px;
-  background-image: url('/assets/img/acercademi.jpg');
+  background-image: url('../img/acercademi.jpg');
   background-size: cover; 
   background-position: center;
 }
@@ -196,7 +196,7 @@ float: right;
 .container-footer{
   display: flexbox;
   align-items: center; /* Alinea verticalmente los elementos dentro del contenedor */
-  background-image: url('/assets/img/vector.png');
+  background-image: url('../img/vector.png');
   background-size:cover;
   background-position: center;
 }
