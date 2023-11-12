@@ -83,8 +83,8 @@ body {
 
   .container-footer{
     display: flexbox;
-    align-items: center; /* Alinea verticalmente los elementos dentro del contenedor */
-    background-image: url('/assets/img/vector.png');
+    align-items: center;
+    background-image: url('assets/img/vector.png');
     background-size:cover;
     background-position: center;
   }
