@@ -144,9 +144,27 @@ header {
 }
 
 .dropdown-menu {
-  height: 300px;
-  overflow: auto;
+  max-height: 300px; /* Tamaño máximo del menú */
+  overflow-y: auto; /* Añade una barra de desplazamiento vertical cuando sea necesario */
   background-color: black;
+  border: none;
+  border-radius: 10px; /* Reducido el radio de los bordes */
+}
+
+.dropdown-item {
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.dropdown-toggle::after {
+  display: none;
 }
 
 a {
