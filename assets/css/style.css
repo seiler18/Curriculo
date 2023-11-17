@@ -268,60 +268,37 @@ width: 250px; height: 60px;
 
 
 
-/* .carousel {
-  width: 100%;
-  overflow: scroll;
-  padding: 30px;
-  position: relative;
+/* Estilo para las flechas del carrusel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black; /* Color de fondo de las flechas */
+    color: white; /* Color del icono de la flecha */
+    border-radius: 50%; /* Borde redondeado */
+    padding: 10px; /* Espaciado interno */
+    font-size: 24px; /* Tamaño de la fuente del icono */
 }
 
-.carousel__container  {
-  white-space: nowrap;
-  margin: 70px 0px ;
-  padding-bottom: 10px ;
+/* Cambiar el color cuando el mouse está sobre las flechas */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: transparent; /* Color de fondo al pasar el mouse */
+    color: black; /* Color del icono al pasar el mouse */
 }
 
-.carousel-item{
-  background-color: blue;
-  width: 200px  ;
-  height: 250px;
-  border-radius: 20px;
-  overflow: hidden;
-  margin-right: 10px  ;
-  display: inline-block;
-  cursor: pointer;
-transition: 600ms all;
-transform-origin: center left;
-position: relative;
+/* Tamaño de las flechas del carrusel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 75px; /* Ajusta el ancho según tus preferencias */
+    height: 75px; /* Ajusta la altura según tus preferencias */
 }
 
-.carousel__container:hover ~ .carousel-item{
-  transform: translate3d(100px,0,0) ;
-
-}
-.carousel__container:hover .carousel-item{
-  opacity: 0.3 ;
-}
-.carousel__container:hover .carousel-item:hover{
-  transform: scale(1.5) ;
+/* Color de las flechas del carrusel */
+.carousel-control-prev-icon::before,
+.carousel-control-next-icon::before {
+    content: '\2039'; /* Código Unicode para la flecha izquierda */
+    color: #000; /* Color de la flecha */
 }
 
-.carousel-item__img{
-  width: 250px;
-  height: 300px ;
-  object-fit: cover;
+.carousel-control-next-icon::before {
+    content: '\203a'; /* Código Unicode para la flecha derecha */
 }
-
-.carousel-item__details{
-  background: linear-gradient(to top, rgba(0,0,0,0.9)0%,rgba(0,0,0,0)100%);
-font-size: 10px ;
-opacity: 1;
-transition: 500ms opacity;
-padding: 10px;
-position: absolute;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-
-; */
