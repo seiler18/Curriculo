@@ -292,13 +292,4 @@ width: 250px; height: 60px;
     height: 75px; /* Ajusta la altura según tus preferencias */
 }
 
-/* Color de las flechas del carrusel */
-.carousel-control-prev-icon::before,
-.carousel-control-next-icon::before {
-    content: '\2039'; /* Código Unicode para la flecha izquierda */
-    color: #000; /* Color de la flecha */
-}
 
-.carousel-control-next-icon::before {
-    content: '\203a'; /* Código Unicode para la flecha derecha */
-}
