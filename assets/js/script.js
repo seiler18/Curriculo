@@ -78,4 +78,7 @@ $("#mostrarExperiencia").click(function() {
 });
 
 
-
+//Certificado de Free web Desing
+function verCertificado() {
+    window.open("https://www.freecodecamp.org/certification/ichbinseiler/responsive-web-design", "_blank");
+  }
