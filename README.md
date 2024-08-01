@@ -43,14 +43,14 @@ Mi trayectoria laboral abarca desde operaciones logísticas especializadas y ges
 
 ## 📫 Conéctate conmigo
 
-- [LinkedIn](https://www.linkedin.com/in/jesusseiler)
-- [GitHub](https://github.com/jesusseiler)
-- [Email](mailto:jesusseiler@example.com)
+- [LinkedIn](https://www.linkedin.com/in/ichbinseiler)
+- [GitHub](https://github.com/seiler18)
+- [Email](mailto:ichbinseiler@gmail.com)
 
 ¡Siempre estoy en busca de nuevos desafíos y oportunidades para aplicar mis conocimientos y experiencia en proyectos que marquen la diferencia! 👍
 
 ---
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/your-username/logo.png" alt="Your Logo" width="200">
+  <img src="https://github.com/seiler18/Curriculo/blob/main/assets/img/logo%20jesus%20seiler.jpeg" alt="Your Logo" width="200">
 </p>
