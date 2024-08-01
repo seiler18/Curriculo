@@ -19,6 +19,13 @@ Mi trayectoria laboral abarca desde operaciones logísticas especializadas y ges
 
 ## 💼 Experiencia Profesional
 
+- **Opciones SA**
+  - Operaciones logísticas especializadas
+  - Gestión de transacciones y modulos en OFbiz
+  - Ingeniero en sistemas trainee
+  - Administrativo trainee
+  - Vue,Groovy,Java, entre otros
+
 - **Nestlé Chile SA**
   - Operaciones logísticas especializadas
   - Gestión de transacciones SAP
@@ -52,5 +59,5 @@ Mi trayectoria laboral abarca desde operaciones logísticas especializadas y ges
 ---
 
 <p align="center">
-  <img src="https://github.com/seiler18/Curriculo/blob/main/assets/img/logo%20jesus%20seiler.jpeg" alt="Your Logo" width="200">
+  <img src="https://github.com/seiler18/Curriculo/blob/main/assets/img/logo%20jesus%20seiler.jpeg" alt="Jesus Seiler Logo" style="width: 50%; max-width: 400px; height: auto;">
 </p>
