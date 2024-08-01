@@ -8,9 +8,9 @@ Mi trayectoria laboral abarca desde operaciones logísticas especializadas y ges
 
 - 🔧 **Habilidades Técnicas**:
   - **Desarrollo Web**: HTML, CSS, JavaScript, React, Node.js
-  - **Backend**: Java, Spring Boot, Python
+  - **Backend**: Java, Spring Boot.
   - **Herramientas**: Docker, Jenkins, Maven, Git
-  - **Base de Datos**: MySQL, PostgreSQL, MongoDB
+  - **Base de Datos**: MySQL, PostgreSQL , Oracle (Basic)
   - **Otros**: Excel, SAP
 
 - 🌍 **Idiomas**: 
