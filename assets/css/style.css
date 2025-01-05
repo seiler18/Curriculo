@@ -190,13 +190,30 @@ font-size: 40px;
 -webkit-text-stroke: 2px rgb(0, 0, 0);
 }
 
-.logo{
-  width: 20%;
-float: right;
+.logos-container {
+  margin-top: 2rem;
 }
-.logo2{
-  width: 20%;
-  float: right;
+
+.logo, .logo2 {
+  width: 150px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover, .logo2:hover {
+  transform: scale(1.1); /* efecto hover */
+}
+
+/*imágenes sean responsivas */
+@media (max-width: 768px) {
+  .logos-container .d-flex {
+    flex-direction: column;
+  }
+  
+  .logo, .logo2 {
+    width: 120px; /* tamaño más pequeño para móviles */
+    margin: 10px 0;
+  }
 }
 
 .header-section2 {
