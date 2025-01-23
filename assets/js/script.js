@@ -82,3 +82,33 @@ $("#mostrarExperiencia").click(function() {
 function verCertificado() {
     window.open("https://www.freecodecamp.org/certification/ichbinseiler/responsive-web-design", "_blank");
   }
+
+  //Certificado de Free web Desing
+function verCertificadoJS() {
+    window.open("https://www.freecodecamp.org/certification/ichbinseiler/javascript-algorithms-and-data-structures", "_blank");
+  }
+
+
+  const carousel = document.querySelector('.logos-carousel');
+  const prevButton = document.querySelector('.carousel-button.prev');
+  const nextButton = document.querySelector('.carousel-button.next');
+  
+  // Ancho de cada elemento (ajústalo si cambias el diseño)
+  const itemWidth = carousel.querySelector('.logo-item').offsetWidth + 20; // incluye el gap
+  
+  // Desplazamiento a la izquierda
+  prevButton.addEventListener('click', () => {
+    carousel.scrollBy({
+      left: -itemWidth,
+      behavior: 'smooth',
+    });
+  });
+  
+  // Desplazamiento a la derecha
+  nextButton.addEventListener('click', () => {
+    carousel.scrollBy({
+      left: itemWidth,
+      behavior: 'smooth',
+    });
+  });
+  

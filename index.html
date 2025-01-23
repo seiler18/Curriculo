@@ -143,24 +143,37 @@
 <!--SECCION BANNER DE PRESENTACIÒN-->
 <header class="text-light pt-5 mt-5">
   <div class="container">
-    <div class="logos-container text-center mb-4">
-      <!-- Contenedor para las imágenes -->
-      <div class="d-flex justify-content-center align-items-center gap-4">
-        <a href="https://seiler18.github.io/Curriculo/">
-          <img class="logo" src="./assets/img/LOGO JESUS SEILER.png" alt="LogoJesusSeiler">
-        </a>
-        <a href="https://www.youracclaim.com/badges/5c3ed424-4321-4dfa-b1c5-ec322c126595/embedded" 
-           alt="badge" target="_blank" rel="noopener noreferrer" 
-           title="Ver insignia de certificación">
-          <img class="logo2" src="./assets/img/logojava.png" alt="Logo de Java - Certificación">
-        </a>
-        <a href="https://www.acreditta.com/credential/4476ddea-f09c-4e5b-93fa-e36f8cba5cb5" 
-           alt="badge" target="_blank" rel="noopener noreferrer" 
-           title="Ver insignia de certificación">
-          <img class="logo2" src="./assets/img/logodevops.webp" alt="Logo de Fundamentos DevOps - Certificación">
-        </a>
-      </div>
+<div class="logos-container">
+  <!-- Contenedor para las imágenes con scroll -->
+  <div class="logos-carousel">
+    <div class="logo-item">
+      <a href="https://seiler18.github.io/Curriculo/">
+        <img class="logo" src="./assets/img/LOGO JESUS SEILER.png" alt="LogoJesusSeiler">
+      </a>
     </div>
+    <div class="logo-item">
+      <a href="https://www.youracclaim.com/badges/5c3ed424-4321-4dfa-b1c5-ec322c126595/embedded" 
+         target="_blank" rel="noopener noreferrer" title="Ver insignia de certificación">
+        <img class="logo2" src="./assets/img/logojava.png" alt="Logo de Java - Certificación">
+      </a>
+    </div>
+    <div class="logo-item">
+      <a href="https://www.acreditta.com/credential/4476ddea-f09c-4e5b-93fa-e36f8cba5cb5" 
+         target="_blank" rel="noopener noreferrer" title="Ver insignia de certificación">
+        <img class="logo2" src="./assets/img/logodevops.webp" alt="Logo de Fundamentos DevOps - Certificación">
+      </a>
+    </div>
+    <div class="logo-item">
+      <a href="https://www.acreditta.com/credential/9f3cf4aa-bd57-42ad-93ca-04ddf485d019">
+        <img class="logo2" src="./assets/img/Salesforce.webp" alt="Ver Insignia de certificación">
+      </a>
+    </div>
+  </div>
+
+  <!-- Botones de navegación -->
+  <button class="carousel-button prev">←</button>
+  <button class="carousel-button next">→</button>
+</div>
 
     <h2 class="display-3 font-weight-bold text-center header-section1 my-4">
       Innovar es la clave del éxito
@@ -1120,6 +1133,16 @@
                   <div class="text-center"><button type="button" class="btn btn-outline-info" data-toggle="modal"
                     data-target="#LiderazgoEfectivo">Ver Certificado</button></div>         
                 </div>
+
+
+                <img class="card-img-top" src="assets/certificados/FCJavaScriptAlgorithm.png" alt="JSCodeCamp">
+                <div class="card-body">
+                  <h6 class="card-title text-center"><b>JavaScript Algorithms and Data Structures </b></h6>
+                  <div class="text-center">
+                    <button type="button" class="btn btn-outline-info" onclick="verCertificadoJS()">Ver
+                      Certificado</button>
+                  </div>
+               </div>
 
               </div>
             </div>

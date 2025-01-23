@@ -191,7 +191,22 @@ font-size: 40px;
 }
 
 .logos-container {
+  position: relative;
   margin-top: 2rem;
+  overflow: hidden;
+  width: 100%; /* Ancho del contenedor */
+}
+
+.logos-carousel {
+  display: flex;
+  gap: 20px;
+  overflow-x: hidden;
+  scroll-behavior: smooth; /* Para un desplazamiento suave */
+}
+
+.logo-item {
+  flex: 0 0 calc(30% - 10px); /* Mostrar dos elementos al mismo tiempo */
+  text-align: center;
 }
 
 .logo, .logo2 {
@@ -201,18 +216,43 @@ font-size: 40px;
 }
 
 .logo:hover, .logo2:hover {
-  transform: scale(1.1); /* efecto hover */
+  transform: scale(1.1);
 }
 
-/*imágenes sean responsivas */
+/* Botones de navegación */
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel-button.prev {
+  left: 10px;
+}
+
+.carousel-button.next {
+  right: 10px;
+}
+
+.carousel-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Responsivo */
 @media (max-width: 768px) {
-  .logos-container .d-flex {
-    flex-direction: column;
-  }
-  
   .logo, .logo2 {
-    width: 120px; /* tamaño más pequeño para móviles */
-    margin: 10px 0;
+    width: 120px;
+  }
+  .logo-item {
+    flex: 0 0 100%; /* Mostrar un elemento a la vez en móviles */
   }
 }
 
