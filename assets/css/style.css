@@ -110,12 +110,25 @@ header {
   background-image: url("../img/header1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center; /* Cambia a "center" para mayor flexibilidad */
+  background-position: center;
   padding-bottom: 40rem;
   animation: header 15s infinite;
   overflow: hidden;
   box-shadow: 0px 0px 10px rgba(245, 241, 241, 0.5);
-  transition: background-image 0.5s ease-in-out; /* Suaviza la transición entre imágenes */
+
+  /* Difuminado ajustado */
+  -webkit-mask-image: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%), 
+    radial-gradient(circle, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
+  mask-image: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%), 
+    radial-gradient(circle, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
+  -webkit-mask-composite: destination-in;
+  mask-composite: intersect;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+  mask-size: cover;
 }
 
 /* Animación de las imágenes */
