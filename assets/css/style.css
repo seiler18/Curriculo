@@ -107,33 +107,47 @@ color: white;
 text-shadow: 0.1em 0.15em 0.15em #000000;
 }
 header {
-  background-image: url("../img/header.jpg");
+  background-image: url("../img/header1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: right;
+  background-position: center; /* Cambia a "center" para mayor flexibilidad */
   padding-bottom: 40rem;
   animation: header 15s infinite;
-  overflow:hidden;
-  box-shadow: 0px 0px 10px rgba(245, 241, 241, 0.5); /* Controla la intensidad del difuminado ajustando el valor de 'rgba' */
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(245, 241, 241, 0.5);
+  transition: background-image 0.5s ease-in-out; /* Suaviza la transición entre imágenes */
 }
 
-
+/* Animación de las imágenes */
 @keyframes header {
-  0%,
-  25% {
+  0%, 25% {
     background-image: url("../img/header1.jpg");
   }
-  30%,
-  55% {
+  30%, 55% {
     background-image: url("../img/header2.jpg");
   }
-  60%,
-  80% {
+  60%, 80% {
     background-image: url("../img/header3.jpg");
   }
-  85%,
-  100% {
+  85%, 100% {
     background-image: url("../img/header4.jpg");
+  }
+}
+
+/* Ajustes específicos para móviles */
+@media (max-width: 768px) {
+  header {
+    background-size: contain; /* Adapta la imagen al tamaño del contenedor */
+    background-position: top center; /* Ajusta el enfoque en móviles */
+    padding-bottom: 20rem; /* Reduce el espacio para pantallas más pequeñas */
+  }
+
+  .container {
+    padding: 1rem; /* Reduce el padding interno para mejor visualización */
+  }
+
+  h2 {
+    font-size: 1.5rem; /* Ajusta el tamaño del texto para móviles */
   }
 }
 
@@ -207,6 +221,7 @@ font-size: 40px;
 .logo-item {
   flex: 0 0 calc(30% - 10px); /* Mostrar dos elementos al mismo tiempo */
   text-align: center;
+  overflow: hidden;
 }
 
 .logo, .logo2 {
