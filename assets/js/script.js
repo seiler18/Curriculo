@@ -88,6 +88,11 @@ function verCertificadoJS() {
     window.open("https://www.freecodecamp.org/certification/ichbinseiler/javascript-algorithms-and-data-structures", "_blank");
   }
 
+  //Certificado de OCI
+  function verCertificadoOCI() {
+    window.open("https://catalog-education.oracle.com/pls/certview/sharebadge?id=0EE370D017FDDE5093D72D0FAAA09E4B5AD04E6D9E4E32BFFC3537ECDA237F0B", "_blank");
+  }
+
 
   const carousel = document.querySelector('.logos-carousel');
   const prevButton = document.querySelector('.carousel-button.prev');
