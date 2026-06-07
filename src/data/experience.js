@@ -1,0 +1,122 @@
+export const sapKnowledge = `
+  <b>PO_VAR:</b> Trata de desviaciones de producción (ver perdidas o ganancias de una o varias OP)<br>
+  <b>LS26:</b> Stock en almacen por material (Ver la cantidad de un determinado material por su # de identificación, a su vez ver su ubicación en una determinada PSA)<br>
+  <b>COID:</b> Detalles de ordenes de procesos<br>
+  <b>COR3:</b> Visualizar ordenes de procesos<br>
+  <b>LB11:</b> Visualizar necesidad de orden de transporte / anulaciónes pendientes<br>
+  <b>LT10:</b> Crear instrucción de moviento interno, crear una OT (orden de transporte)<br>
+  <b>ME23N:</b> Visualización y creación de pedidos para despachar cualquier materia entre una fabrica y otra.<br>
+  <b>MB1A:</b> Realización de consumos/producción/anulación (101-261/102-262) de cualquier material en ordenes de procesos<br>
+  <b>MB5T:</b> Revisión de ordenes de pedidos de traslado entre una fabrica y otra.<br>
+  <b>Fiabilidad:</b> Tratar / Visualizar todos los reportes de linea, su desempeño %AI, %PNP, %PP, sus desviaciones. Permite medir el desempeño de toda la fabrica exportando resultados en Excel.<br>
+  <b>FEAT:</b> Aplicación web usada para hacer consumo / declaración de un determinado PRODUCTO/MATERIAL, dando como finalidad una transacción que se envia a SAP.
+`
+
+export const experiences = [
+  {
+    id: 'banco',
+    title: 'Banco Venezolano de Credito',
+    location: 'Venezuela - Zulia',
+    role: 'Representante de Ventas / Cajero',
+    img: 'assets/img/card-5.jpg',
+    imgAlt: 'Banco',
+    slide: 0,
+    modalTitle: 'Banco Venezolano de Credito',
+    position: 'Representante de ventas / Cajero administrativo',
+    duration: '6 meses',
+    from: 'Enero 2016',
+    to: 'Junio 2016',
+    description: 'Atención de los clientes con los distintos requerimientos que tengan, ofrecer los productos del banco (ofertas y servicios), recibir depositos, realizar pagos de servicios, facturaciones pendientes. Realizar y cobrar cheques de gerencia, entre otras funciones propias de un cajero.',
+  },
+  {
+    id: 'lajorara',
+    title: 'La Jorara',
+    location: 'Colombia - Palomino - Santa Marta',
+    role: 'Administrador / Hoster.',
+    img: 'assets/img/card-3.jpg',
+    imgAlt: 'LaJorara',
+    slide: 0,
+    modalTitle: 'La Jorara',
+    position: 'Admnistrador / Hoster / Atención al cliente',
+    duration: '2 años',
+    from: 'Julio 2016',
+    to: 'Junio 2018',
+    description: 'Check-in Check-out de los Clientes. Administración de ingresos y egresos. Generación de planillas Excel para el pago de nómina. Planificación y atención de eventos. Servicio al cliente.',
+  },
+  {
+    id: 'lanegra',
+    title: 'La Negra Restobar',
+    location: 'Chile - Llanquihue',
+    role: 'Garzón - Atención al cliente.<br>Encargado de caja.',
+    img: 'assets/img/card-2.jpg',
+    imgAlt: 'LaNegraRestobar',
+    slide: 0,
+    modalTitle: 'La Negra Restobar',
+    position: 'Garzón - Atención al cliente / Encargado de caja',
+    duration: '1 año',
+    from: 'Octubre 2018',
+    to: 'Octubre 2019',
+    description: 'Atención al cliente, recibir los pedidos y notificarlos a cocina. Procurar siempre dar el mejor trato para que la experiencia del cliente sea la mejor. Manejo del Inglés con los turistas.',
+  },
+  {
+    id: 'mytrip',
+    title: 'My Trip Rent A Car',
+    location: 'Chile - Puerto Varas',
+    role: 'Administrador general / Agente de reservas.',
+    img: 'assets/img/card-1.png',
+    imgAlt: 'MyTripRentACar',
+    slide: 1,
+    modalTitle: 'Agente Reservas MyTripRentACar',
+    position: 'Administrador general / Agente de reservas.',
+    duration: '6 meses',
+    from: 'Octubre 2019',
+    to: 'Marzo 2020',
+    description: 'Gestión sistema de reservas. Administración de la empresa. Reportes administrativos semanales. Atención al cliente. Gestión de proyectos.',
+  },
+  {
+    id: 'AIEP',
+    title: 'AIEP',
+    location: 'Chile - Puerto Montt',
+    role: 'Coordinador de Curso',
+    img: 'assets/img/aiep.png',
+    imgAlt: 'AIEP',
+    slide: 1,
+    modalTitle: 'AIEP - Puerto Montt',
+    position: 'Coordinador de Curso',
+    duration: '7 meses a Honorarios',
+    from: 'Junio 2020',
+    to: 'Diciembre 2020',
+    description: 'Gestionar todo el comienzo de curso, asi como su logistica. Estar pendiente del desarrollo de cada integrante, su avance en el curso y actividades pendientes. Tambien de resolver dudas en Ruby.',
+  },
+  {
+    id: 'Nestle',
+    title: 'Nestlé',
+    location: 'Chile - Llanquihue',
+    role: 'Operario Especializado / Apoyo Logistico',
+    img: 'assets/img/card-4.jpg',
+    imgAlt: 'Nestle',
+    slide: 1,
+    modalTitle: 'Nestlé S.A',
+    position: 'Operario Especializado - Apoyo Logistico',
+    duration: '3 años',
+    from: 'Julio 2020',
+    to: 'Julio 2023',
+    description: 'Operador de distinta maquinaria dentro de la fabrica de Nestlé Llanquihue, siguiendo los distintos protocolos de higiene y seguridad, así como los distintos estándares de calidad.',
+    extra: 'nestle',
+  },
+  {
+    id: 'Opciones',
+    title: 'Opciones SA',
+    location: 'Chile - Puerto Montt',
+    role: 'Ingeniero de Sistemas - Trainee',
+    img: 'assets/img/logo.png',
+    imgAlt: 'Opciones SA',
+    slide: 2,
+    modalTitle: 'Opciones SA - Puerto Montt',
+    position: 'Ingeniero de Sistemas - Trainee',
+    duration: 'Actualidad',
+    from: '03 - Agosto 2023',
+    to: 'Actualidad',
+    description: '',
+  },
+]

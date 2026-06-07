@@ -33,3 +33,8 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### Vite / Node ###
+node_modules/
+dist/
+*.backup
