@@ -1,17 +1,22 @@
-# 👨‍💻 Jesús Seiler - Full Stack Developer
+# 👨‍💻 Jesús Seiler - Analista Administrativo & Sistemas
 
-👋 ¡Hola! Soy Jesús Seiler, un Ingeniero Civil reconvertido en Desarrollador Web Full Stack con un apasionado interés en la tecnología y la innovación.
+👋 ¡Hola! Soy Jesús Seiler, Analista Administrativo y de Sistemas con especialización en gestión integrada de sistemas ISO, seguridad de la información y continuidad del negocio. Ingeniero Civil reconvertido en profesional TI con enfoque en automatización, mejora continua y transformación digital.
 
 ## 🚀 Sobre mí
 
-Mi trayectoria laboral abarca desde operaciones logísticas especializadas y gestión de transacciones SAP en **Nestlé Chile SA**, hasta la administración eficiente de reservas y atención al cliente en **MyTripRentACar**. Mi enfoque siempre ha sido la excelencia en todo lo que hago, impulsado por mi dedicación al aprendizaje constante y a la mejora continua.
+Profesional con trayectoria en operaciones logísticas, gestión SAP y administración de sistemas. Actualmente en **OPCIONES S.A.** (Puerto Montt, Chile), donde trabajo de forma transversal con áreas operativas, administrativas y TI, liderando la gestión integrada de múltiples sistemas de certificación y seguridad de la información.
+
+Mi enfoque combina rigor técnico con visión organizacional, impulsado por dedicación al aprendizaje constante y la mejora continua.
 
 - 🔧 **Habilidades Técnicas**:
-  - **Desarrollo Web**: HTML, CSS, JavaScript, React, Node.js
-  - **Backend**: Java, Spring Boot.
-  - **Herramientas**: Docker, Jenkins, Maven, Git
-  - **Base de Datos**: MySQL, PostgreSQL , Oracle (Basic)
-  - **Otros**: Excel, SAP
+  - **Desarrollo Web**: HTML, CSS, JavaScript, React, Node.js, Vue.js
+  - **Backend**: Java, Spring Boot, Groovy, OFbiz
+  - **Sistemas de Gestión**: ISO 9001, 14001, 45001, ISO/IEC 27001, ISO 22301, ISO/IEC 20000-1
+  - **Seguridad & Cumplimiento**: SGSI, Auditoría Interna ISO, Gestión de Riesgos, Continuidad del Negocio
+  - **Herramientas**: Docker, Jenkins, Maven, Git, SharePoint
+  - **Base de Datos**: MySQL, PostgreSQL, Oracle (Básico)
+  - **Gestión Documental & ERP**: SAP, OFbiz, Automatización de procesos
+  - **Otros**: Excel avanzado, ITIL, Análisis de procesos
 
 - 🌍 **Idiomas**: 
   - Español (Nativo)
@@ -19,34 +24,62 @@ Mi trayectoria laboral abarca desde operaciones logísticas especializadas y ges
 
 ## 💼 Experiencia Profesional
 
-- **Opciones SA**
-  - Operaciones logísticas especializadas
-  - Gestión de transacciones y modulos en OFbiz
-  - Ingeniero en sistemas trainee
-  - Administrativo trainee
-  - Vue,Groovy,Java, entre otros
+### **OPCIONES S.A.** (Puerto Montt, Chile)
+**Analista Administrativo & Analista de Sistemas**
 
-- **Nestlé Chile SA**
-  - Operaciones logísticas especializadas
-  - Gestión de transacciones SAP
+- Gestión principal de sistemas de gestión integrados (ISO 9001, 14001, 45001, 27001, 22301, 20000-1)
+- Administrador de SharePoint OPERACIONES-CERTIFICACIONES (repositorio central de documentación)
+- Implementación y mantenimiento de ISO/IEC 27001 (SGSI - Seguridad de la Información)
+- Gestión de continuidad del negocio (ISO 22301) y servicios TI (ISO 20000-1)
+- Auditor Interno en Normas ISO
+- Desarrollo de soluciones administrativas con automatización de procesos
+- Soporte transversal a operaciones, administración y TI
 
-- **MyTripRentACar**
-  - Administración de reservas
-  - Atención al cliente
+**Tecnologías & Herramientas**: Java, Groovy, Vue.js, OFbiz, SharePoint, ITIL, SGSI
+
+---
+
+### **Nestlé Chile SA**
+**Operaciones Logísticas & Gestión SAP**
+
+- Operaciones logísticas especializadas
+- Gestión de transacciones y módulos SAP
+- Coordinación de procesos críticos
+
+---
+
+### **MyTripRentACar**
+**Administrador de Reservas & Atención al Cliente**
+
+- Administración integral de sistema de reservas
+- Servicio al cliente especializado
 
 ## 🛠️ Proyectos Destacados
 
-- **AppManageEvents**
-  - Aplicación para gestionar eventos y asignar salones, desarrollada con Spring Boot y Thymeleaf.
-  - Integración con Docker y Jenkins para CI/CD.
+### **Gestión ISO - OPCIONES** (En desarrollo)
+- Plataforma centralizada para gestión integrada de sistemas certificados
+- Interfaz interactiva con filtrado y búsqueda por norma
+- Compartido en modo lectura con Comité de Seguridad de la Información (CSI)
+- Sincronización con documentación en SharePoint
 
-- **PrinterAgent**
-  - Agente en Java para ejecutar SNMPWalk en impresoras y recopilar información de OIDs.
+### **AppManageEvents**
+- Aplicación web para gestión de eventos y asignación de salones
+- Tecnologías: Spring Boot, Thymeleaf, Docker, Jenkins (CI/CD)
 
-## 🎓 Formación
+### **PrinterAgent**
+- Agente Java para recopilación de datos SNMP en infraestructura de impresoras
+- Extracción y análisis de OIDs
 
-- **Ingeniería Civil**
-  - Formación que me brinda una perspectiva única en la resolución de problemas y la planificación estratégica.
+### **Integración Documental - ISO 27001**
+- Estructuración modular de controles y procedimientos de seguridad de la información
+- Documentación de políticas, accesos, cambios, incidentes y gestión de activos
+
+## 🎓 Formación & Certificaciones
+
+- **Ingeniería Civil** - Formación base que aporta perspectiva analítica y estratégica
+- **Auditor Interno en Normas ISO** - Competencia en auditoría interna de sistemas integrados
+- **ITIL & Gestión de Servicios TI** - Fundamentos y mejores prácticas
+- **Seguridad de la Información & SGSI** - ISO/IEC 27001, 27002 y normativas asociadas
 
 ## 📫 Conéctate conmigo
 
@@ -54,7 +87,11 @@ Mi trayectoria laboral abarca desde operaciones logísticas especializadas y ges
 - [GitHub](https://github.com/seiler18)
 - [Email](mailto:ichbinseiler@gmail.com)
 
-¡Siempre estoy en busca de nuevos desafíos y oportunidades para aplicar mis conocimientos y experiencia en proyectos que marquen la diferencia! 👍
+---
+
+💡 **Intereses**: Automatización de procesos, transformación digital, sistemas integrados, seguridad de la información, continuidad del negocio, mejora continua.
+
+¡Siempre en búsqueda de nuevos desafíos que combinen rigor técnico con impacto organizacional! 👍
 
 ---
 
