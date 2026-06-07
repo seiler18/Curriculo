@@ -1,7 +1,0 @@
-exiftool -Title="Curriculo de Jesus Seiler" CurriculoIngles.pdf
-exiftool -Description="https://jesusseiler.website/" CurriculoIngles.pdf
-exiftool -Subject="JESUS ENRIQUE SEILER VELASQUEZ" CurriculoIngles.pdf
-exiftool -Author="JESUS ENRIQUE SEILER VELASQUEZ" CurriculoIngles.pdf
-exiftool -Creator="JESUS ENRIQUE SEILER VELASQUEZ" CurriculoIngles.pdf
-
-exiftool -lang es CurriculoIngles.pdf
