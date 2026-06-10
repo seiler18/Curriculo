@@ -8,7 +8,7 @@ function workModal(exp) {
       </a>
     </button>
     <p class="nestle" id="carta-trabajo">
-      <a href="assets/certificados/REFERENCIA_LABORAL.pdf" target="_blank" download="Carta Recomendación Jesús Seiler - Nestle Llanquihue">
+      <a href="assets/certificados/REFERENCIA_LABORAL.pdf" target="_blank" rel="noopener noreferrer" download="Carta Recomendación Jesús Seiler - Nestle Llanquihue">
         <img class="img-fluid my-2" src="assets/img/IMGRL.png" alt="Carta Trabajo">
       </a>
     </p>
@@ -18,19 +18,19 @@ function workModal(exp) {
       </a>
     </button>
     <p class="nestle" id="certificados-nestle">
-      <a href="assets/certificados/diploma de honor.jpg" target="_blank" download="Diploma Jesus Seiler">
+      <a href="assets/certificados/diploma de honor.jpg" target="_blank" rel="noopener noreferrer" download="Diploma Jesus Seiler">
         <img class="img-fluid my-2" src="assets/certificados/diploma de honor.jpg" alt="diploma">
       </a>
-      <a href="assets/certificados/CODIGO CONDUCTA Certificado Nestle .pdf" target="_blank" download="CODIGO CONDUCTA Certificado Nestle">
+      <a href="assets/certificados/CODIGO CONDUCTA Certificado Nestle .pdf" target="_blank" rel="noopener noreferrer" download="CODIGO CONDUCTA Certificado Nestle">
         <img class="img-fluid my-2" src="assets/img/CODIGO CONDUCTA Certificado Nestle .png" alt="diploma">
       </a>
-      <a href="assets/certificados/Jesus Seiler Certificado.pdf" target="_blank" download="Jesus Seiler Certificado">
+      <a href="assets/certificados/Jesus Seiler Certificado.pdf" target="_blank" rel="noopener noreferrer" download="Jesus Seiler Certificado">
         <img class="img-fluid my-2" src="assets/img/Jesus Seiler Certificado.png" alt="diploma">
       </a>
-      <a href="assets/certificados/Líderes operacionales 2025.pdf" target="_blank" download="Líderes operacionales 2025">
+      <a href="assets/certificados/Líderes operacionales 2025.pdf" target="_blank" rel="noopener noreferrer" download="Líderes operacionales 2025">
         <img class="img-fluid my-2" src="assets/img/Líderes operacionales 2025.png" alt="diploma">
       </a>
-      <a href="assets/certificados/Jesús_Seiler_ES_Programa_Nestlé_Digital_Literacy.pdf" target="_blank" download="Nestlé_Digital_Literacy">
+      <a href="assets/certificados/Jesús_Seiler_ES_Programa_Nestlé_Digital_Literacy.pdf" target="_blank" rel="noopener noreferrer" download="Nestlé_Digital_Literacy">
         <img class="img-fluid my-2" src="assets/img/Jesús_Seiler_ES_Programa_Nestlé_Digital_Literacy.png" alt="diploma">
       </a>
     </p>

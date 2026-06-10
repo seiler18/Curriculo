@@ -16,10 +16,10 @@ export function renderAbout() {
             <li>Edad : 30 años</li>
             <li>Dirección : Puerto Montt - Ana Gonzalez Olea 3034</li>
             <li>Estudios : Ingeniero Civil en la Universidad del Zulia-Venezuela
-              <a class="titulo" href="assets/certificados/Titulo.pdf" target="_blank" download="Titulo">(DESCARGAR TITULO)</a>
+              <a class="titulo" href="assets/certificados/Titulo.pdf" target="_blank" rel="noopener noreferrer" download="Titulo">(DESCARGAR TITULO)</a>
             </li>
             <li>Técnico de nivel superior en programación y análisis de sistemas en el IP AIEP - Chile
-              <a class="titulo" href="assets/certificados/Titulo2.pdf" target="_blank" download="Titulo2">(DESCARGAR TITULO)</a>
+              <a class="titulo" href="assets/certificados/Titulo2.pdf" target="_blank" rel="noopener noreferrer" download="Titulo2">(DESCARGAR TITULO)</a>
             </li>
             <li>Certificación Desarrollo de aplicaciones full stack java.</li>
             <li>Certificación Fundamentos de DevOps</li>
@@ -43,7 +43,7 @@ export function renderAbout() {
             <li>Curso de Primeros Auxilios</li>
             <li>Ingles Avanzado 40 horas Universidad del Zulia</li>
             <li>Ingles C1 (EFSET)
-              <a class="titulo" href="assets/certificados/EF SET Certificate.pdf" target="_blank" download="EF SET Certificate"><br>(DESCARGAR CERTIFICADO)</a>
+              <a class="titulo" href="assets/certificados/EF SET Certificate.pdf" target="_blank" rel="noopener noreferrer" download="EF SET Certificate"><br>(DESCARGAR CERTIFICADO)</a>
             </li>
             <li>Conocimiento Avanzado en Herramientas Office (365)</li>
             <li>Conocimientos en Transacciones SAP

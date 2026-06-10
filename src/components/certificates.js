@@ -20,7 +20,7 @@ function certModal(cert) {
             </button>
           </div>
           <div class="modal-body">
-            <a href="${cert.certHref}" target="_blank" download="${cert.download}">
+            <a href="${cert.certHref}" target="_blank" rel="noopener noreferrer" download="${cert.download}">
               <img class="img-fluid mb-3" src="${cert.img}" alt="${cert.title}">
             </a>
             <p><b>Presione imagen para descargar el certificado</b></p>

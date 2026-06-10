@@ -32,12 +32,12 @@ export function renderFooter() {
             <i class="fab fa-whatsapp fa-2x"></i>
           </a>
           <p>
-            <a href="mailto:ichbinseiler@gmail.com" target="_blank">
+            <a href="mailto:ichbinseiler@gmail.com" target="_blank" rel="noopener noreferrer">
               <span>Contactar por Gmail&nbsp;</span>
               <i class="fab fa-google fa-2x"></i>
             </a>
           </p>
-          <p>©Jesús Seiler 2025. Todos los derechos reservados.</p>
+          <p>©Jesús Seiler 2026. Todos los derechos reservados.</p>
         </footer>
       </div>
     </section>

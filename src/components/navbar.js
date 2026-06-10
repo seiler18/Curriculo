@@ -44,12 +44,12 @@ export function renderNavbar() {
               <a href="#" class="dropdown-toggle nav-link text-light" data-toggle="dropdown">Descargar Curriculo</a>
               <ul class="dropdown-menu text-light text-center">
                 <li>
-                  <a class="nav-link hero-section text-light" target="_blank" href="CurriculoIngles.pdf" download="Curriculo Jesus Seiler">
+                  <a class="nav-link hero-section text-light" target="_blank" rel="noopener noreferrer" href="CurriculoIngles.pdf" download="Curriculo Jesus Seiler">
                     <b>Curriculo Ingles</b>
                   </a>
                 </li>
                 <li>
-                  <a class="nav-link hero-section text-light" target="_blank" href="Curriculo.pdf" download="Curriculo Jesus Seiler">
+                  <a class="nav-link hero-section text-light" target="_blank" rel="noopener noreferrer" href="Curriculo.pdf" download="Curriculo Jesus Seiler">
                     <b>Curriculo Español</b>
                   </a>
                 </li>
