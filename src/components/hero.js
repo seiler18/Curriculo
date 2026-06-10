@@ -1,41 +1,53 @@
 const logos = [
   {
-    href: 'https://seiler18.github.io/Curriculo/',
-    img: 'assets/img/LOGO JESUS SEILER.png',
-    alt: 'LogoJesusSeiler',
-    cls: 'logo',
+    href: "https://seiler18.github.io/Curriculo/",
+    img: "assets/img/LOGO JESUS SEILER.png",
+    alt: "LogoJesusSeiler",
+    cls: "logo",
   },
   {
-    href: 'https://www.youracclaim.com/badges/5c3ed424-4321-4dfa-b1c5-ec322c126595/embedded',
-    img: 'assets/img/logojava.png',
-    alt: 'Logo de Java - Certificación',
-    cls: 'logo2',
+    href: "https://www.youracclaim.com/badges/5c3ed424-4321-4dfa-b1c5-ec322c126595/embedded",
+    img: "assets/img/logojava.png",
+    alt: "Logo de Java - Certificación",
+    cls: "logo2",
   },
   {
-    href: 'https://www.acreditta.com/credential/4476ddea-f09c-4e5b-93fa-e36f8cba5cb5',
-    img: 'assets/img/logodevops.webp',
-    alt: 'Logo de Fundamentos DevOps - Certificación',
-    cls: 'logo2',
+    href: "https://www.acreditta.com/credential/4476ddea-f09c-4e5b-93fa-e36f8cba5cb5",
+    img: "assets/img/logodevops.webp",
+    alt: "Logo de Fundamentos DevOps - Certificación",
+    cls: "logo2",
   },
   {
-    href: 'https://www.acreditta.com/credential/9f3cf4aa-bd57-42ad-93ca-04ddf485d019',
-    img: 'assets/img/Salesforce.webp',
-    alt: 'Ver Insignia de certificación',
-    cls: 'logo2',
+    href: "https://www.acreditta.com/credential/9f3cf4aa-bd57-42ad-93ca-04ddf485d019",
+    img: "assets/img/Salesforce.webp",
+    alt: "Ver Insignia de certificación",
+    cls: "logo2",
   },
   {
-    href: 'https://www.acreditta.com/credential/554fe7be-7150-43cb-8857-58be35c30b06',
-    img: 'assets/img/Voluntarios.webp',
-    alt: 'Ver Insignia de certificación',
-    cls: 'logo2',
+    href: "https://www.acreditta.com/credential/554fe7be-7150-43cb-8857-58be35c30b06",
+    img: "assets/img/Voluntarios.webp",
+    alt: "Ver Insignia de certificación",
+    cls: "logo2",
   },
   {
-    href: 'https://catalog-education.oracle.com/ords/certview/sharebadge?id=0EE370D017FDDE5093D72D0FAAA09E4B5AD04E6D9E4E32BFFC3537ECDA237F0B',
-    img: 'assets/img/OCI.png',
-    alt: 'Logo de OCI - Certificación',
-    cls: 'logo2',
+    href: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=0EE370D017FDDE5093D72D0FAAA09E4B5AD04E6D9E4E32BFFC3537ECDA237F0B",
+    img: "assets/img/OCI.png",
+    alt: "Logo de OCI - Certificación",
+    cls: "logo2",
   },
-]
+  {
+    href: "https://acreditta.com/credential/09287278-a942-43df-aff2-141183913973?utm_source=copy&resource_type=badge&resource=09287278-a942-43df-aff2-141183913973",
+    img: "assets/img/22301.webp",
+    alt: "Logo de Auditor Interno 22301 - Certificación",
+    cls: "logo2",
+  },
+  {
+    href: "https://acreditta.com/credential/ad647a01-5241-4a19-82a6-f6aa62729776?utm_source=copy&resource_type=badge&resource=ad647a01-5241-4a19-82a6-f6aa62729776",
+    img: "assets/img/20000-1.webp",
+    alt: "Logo de Auditor Interno 20000-1 - Certificación",
+    cls: "logo2",
+  },
+];
 
 export function renderHero() {
   const logoItems = logos
