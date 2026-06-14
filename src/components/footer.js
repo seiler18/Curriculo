@@ -37,7 +37,7 @@ export function renderFooter() {
               <i class="fab fa-google fa-2x"></i>
             </a>
           </p>
-          <p>©Jesús Seiler 2025. Todos los derechos reservados.</p>
+          <p>©Jesús Seiler ${new Date().getFullYear()}. Todos los derechos reservados.</p>
         </footer>
       </div>
     </section>
