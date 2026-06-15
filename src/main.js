@@ -41,3 +41,18 @@ $('#OcultarCartaTrabajo').on('click', () => $('#carta-trabajo').toggle())
 
 $('#certificados-nestle').hide()
 $('#OcultarCertificadosNestle').on('click', () => $('#certificados-nestle').toggle())
+
+// Google Translate: elimina el banner superior que tapa el navbar y evita
+// que la página se desplace hacia abajo cuando se traduce. Se ejecuta cada
+// vez que Google inserta o modifica algo (a prueba de reinserciones).
+function fixGoogleTranslate() {
+  document
+    .querySelectorAll('.goog-te-banner-frame, iframe.skiptranslate')
+    .forEach(el => el.style.setProperty('display', 'none', 'important'))
+  if (document.body.style.top && document.body.style.top !== '0px') {
+    document.body.style.setProperty('top', '0px', 'important')
+  }
+}
+const gtObserver = new MutationObserver(fixGoogleTranslate)
+gtObserver.observe(document.documentElement, { childList: true, subtree: true })
+gtObserver.observe(document.body, { attributes: true, attributeFilter: ['style'] })

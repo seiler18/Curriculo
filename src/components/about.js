@@ -1,62 +1,91 @@
+const techBadges = [
+  'HTML5', 'CSS3', 'JavaScript', 'React', 'Node.js', 'Vue.js',
+  'Java', 'Spring Boot', 'Groovy', 'OFbiz',
+  'Docker', 'Jenkins', 'Maven', 'Git', 'SharePoint',
+  'MySQL', 'PostgreSQL', 'Oracle',
+  'SAP', 'RPA RocketBot', 'Office 365',
+  'ISO 9001', 'ISO 27001', 'ISO 22301', 'ISO 20000-1', 'ITIL', 'SGSI',
+]
+
 export function renderAbout() {
+  const badges = techBadges
+    .map(b => `<span class="tech-badge">${b}</span>`)
+    .join('')
+
   return `
     <section id="about" class="container text-center my-5">
       <h2 class="display-3 text-light font-weight-bold my-4">Acerca de mí</h2>
-      <p class="my-4 text-light font-weight-bold">
-        Persona enfocada en el éxito de la empresa.<br>
-        Destacar y buscar siempre la mejor manera de hacer las cosas.
+      <p class="about-intro mx-auto my-4">
+        <strong>Analista Administrativo y de Sistemas</strong> especializado en gestión integrada de
+        sistemas ISO, seguridad de la información y continuidad del negocio. Ingeniero Civil reconvertido
+        en profesional TI, con enfoque en <strong>automatización, mejora continua y transformación digital</strong>.
       </p>
+
       <div class="row">
-        <div class="col-md-4">
-          <i class="fas fa-address-card fa-3x my-3" style="color:whitesmoke"></i>
-          <h3 class="my-3 text-light font-weight-bold">Datos</h3>
-          <ul class="text-light font-weight-bold">
-            <li>Nombres : Jesús Enrique</li>
-            <li>Apellidos : Seiler Velasquez</li>
-            <li>Edad : 30 años</li>
-            <li>Dirección : Puerto Montt - Ana Gonzalez Olea 3034</li>
-            <li>Estudios : Ingeniero Civil en la Universidad del Zulia-Venezuela
-              <a class="titulo" href="assets/certificados/Titulo.pdf" target="_blank" rel="noopener noreferrer" download="Titulo">(DESCARGAR TITULO)</a>
+        <!-- Datos y formación -->
+        <div class="col-md-4 mb-4">
+          <i class="fas fa-id-card fa-3x my-3"></i>
+          <h3 class="my-3 text-light font-weight-bold">Datos &amp; Formación</h3>
+          <ul class="text-light text-left">
+            <li>Jesús Enrique Seiler Velasquez</li>
+            <li>30 años — Puerto Montt, Chile</li>
+            <li>Analista Administrativo &amp; de Sistemas en <strong>OPCIONES S.A.</strong></li>
+            <li>Ingeniero Civil — Universidad del Zulia (Venezuela)
+              <a class="titulo" href="assets/certificados/Titulo.pdf" target="_blank" rel="noopener noreferrer" download="Titulo">(Descargar título)</a>
             </li>
-            <li>Técnico de nivel superior en programación y análisis de sistemas en el IP AIEP - Chile
-              <a class="titulo" href="assets/certificados/Titulo2.pdf" target="_blank" rel="noopener noreferrer" download="Titulo2">(DESCARGAR TITULO)</a>
+            <li>Técnico de Nivel Superior en Programación y Análisis de Sistemas — IP AIEP (Chile)
+              <a class="titulo" href="assets/certificados/Titulo2.pdf" target="_blank" rel="noopener noreferrer" download="Titulo2">(Descargar título)</a>
             </li>
-            <li>Certificación Desarrollo de aplicaciones full stack java.</li>
-            <li>Certificación Fundamentos de DevOps</li>
+            <li>Idiomas: Español (Nativo) · Inglés Avanzado C1
+              <a class="titulo" href="assets/certificados/EF SET Certificate.pdf" target="_blank" rel="noopener noreferrer" download="EF SET Certificate">(Descargar certificado)</a>
+            </li>
           </ul>
         </div>
-        <div class="col-md-4">
-          <i class="fas fa-child fa-3x my-3" style="color:whitesmoke"></i>
-          <h3 class="my-3 text-light font-weight-bold">Objetivos</h3>
-          <ul class="text-light font-weight-bold">
-            <li>Desempeñarme de la mejor manera en el trabajo asignado.</li>
-            <li>Procurar un ambiente de trabajo cómodo y agradable.</li>
-            <li>Ser amable y respetuoso con la clientela</li>
-            <li>Aprender y mejorar cada día.</li>
+
+        <!-- Perfil profesional -->
+        <div class="col-md-4 mb-4">
+          <i class="fas fa-briefcase fa-3x my-3"></i>
+          <h3 class="my-3 text-light font-weight-bold">Perfil Profesional</h3>
+          <ul class="text-light text-left">
+            <li>Gestión de sistemas integrados ISO 9001, 14001, 45001, 27001, 22301 y 20000-1</li>
+            <li>Administrador de SharePoint — repositorio central de documentación</li>
+            <li>Implementación y mantenimiento de SGSI (ISO/IEC 27001)</li>
+            <li>Continuidad del negocio (ISO 22301) y gestión de servicios TI (ISO 20000-1)</li>
+            <li>Auditor Interno en Normas ISO</li>
+            <li>Automatización de procesos y desarrollo de soluciones administrativas</li>
+            <li>Experiencia previa en gestión SAP y operaciones logísticas (Nestlé Chile)</li>
           </ul>
         </div>
-        <div class="col-md-4">
-          <i class="fas fa-clipboard-check fa-3x my-3" style="color:whitesmoke"></i>
-          <h3 class="my-3 text-light font-weight-bold">Conocimientos Generales</h3>
-          <ul class="text-light font-weight-bold">
-            <li>Manejo de Software de Hoteles : OptilodgingPlus, Arawak, Lobby</li>
-            <li>Curso de Primeros Auxilios</li>
-            <li>Ingles Avanzado 40 horas Universidad del Zulia</li>
-            <li>Ingles C1 (EFSET)
-              <a class="titulo" href="assets/certificados/EF SET Certificate.pdf" target="_blank" rel="noopener noreferrer" download="EF SET Certificate"><br>(DESCARGAR CERTIFICADO)</a>
-            </li>
-            <li>Conocimiento Avanzado en Herramientas Office (365)</li>
+
+        <!-- Habilidades técnicas -->
+        <div class="col-md-4 mb-4">
+          <i class="fas fa-laptop-code fa-3x my-3"></i>
+          <h3 class="my-3 text-light font-weight-bold">Habilidades Técnicas</h3>
+          <ul class="text-light text-left">
+            <li><strong>Web:</strong> HTML, CSS, JavaScript, React, Node.js, Vue.js</li>
+            <li><strong>Backend:</strong> Java, Spring Boot, Groovy, OFbiz</li>
+            <li><strong>Seguridad &amp; Gestión:</strong> SGSI, Auditoría ISO, Gestión de Riesgos, ITIL</li>
+            <li><strong>DevOps &amp; Herramientas:</strong> Docker, Jenkins, Maven, Git, SharePoint</li>
+            <li><strong>Bases de datos:</strong> MySQL, PostgreSQL, Oracle</li>
+            <li><strong>ERP &amp; Ofimática:</strong> SAP, OFbiz, Office 365, RPA RocketBot Nivel 2</li>
             <li>Conocimientos en Transacciones SAP
-              <button type="button" class="btn btn-outline-info hero-section titulo"
-                data-toggle="modal" data-target="#SAPConocimientos">(Click para ver)</button>
+              <button type="button" class="btn btn-outline-info btn-sm ml-1"
+                data-toggle="modal" data-target="#SAPConocimientos">Click para ver</button>
             </li>
-            <li>Gestión y desarrollo del Capital humano.</li>
-            <li>RocketBot Nivel 2 RPA</li>
-            <li>Salesforce Developer (Nociones basicas)</li>
-            <li>ERP Ofbiz Framework</li>
           </ul>
         </div>
       </div>
+
+      <h3 class="text-light font-weight-bold mt-4 mb-3">Stack &amp; Tecnologías</h3>
+      <div class="tech-badges">
+        ${badges}
+      </div>
+
+      <p class="about-interests mx-auto mt-4">
+        <i class="fas fa-lightbulb"></i>
+        <strong>Intereses:</strong> automatización de procesos, transformación digital, sistemas integrados,
+        seguridad de la información, continuidad del negocio y mejora continua.
+      </p>
     </section>
 
     <!-- Modal SAP -->

@@ -74,7 +74,7 @@ export function renderHero() {
           Innovar es la clave del éxito
         </h2>
         <div class="text-center">
-          <button type="button" id="mostrarProyectos" class="mt-5 btn btn-dark" style="background-color:black!important;">
+          <button type="button" id="mostrarProyectos" class="mt-5 btn btn-dark">
             <a href="./ejemplos_index.html">
               <p class="conocimientos text-light my-4">
                 Proyectos realizados aplicando los distintos conocimientos
