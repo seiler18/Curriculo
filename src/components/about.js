@@ -3,7 +3,7 @@ const techBadges = [
   'Java', 'Spring Boot', 'Groovy', 'OFbiz',
   'Docker', 'Jenkins', 'Maven', 'Git', 'SharePoint',
   'MySQL', 'PostgreSQL', 'Oracle',
-  'SAP', 'RPA RocketBot', 'Office 365',
+  'SAP', 'RPA RocketBot', 'Office 365', 'Gestión de Servicios TI', 'Gestión Active Directory','GPOs', 'Entra ID','Gestión BitDefender',
   'ISO 9001', 'ISO 27001', 'ISO 22301', 'ISO 20000-1', 'ITIL', 'SGSI',
 ]
 
@@ -28,7 +28,7 @@ export function renderAbout() {
           <h3 class="my-3 text-light font-weight-bold">Datos &amp; Formación</h3>
           <ul class="text-light text-left">
             <li>Jesús Enrique Seiler Velasquez</li>
-            <li>30 años — Puerto Montt, Chile</li>
+            <li>32 años — Puerto Montt, Chile</li>
             <li>Analista Administrativo &amp; de Sistemas en <strong>OPCIONES S.A.</strong></li>
             <li>Ingeniero Civil — Universidad del Zulia (Venezuela)
               <a class="titulo" href="assets/certificados/Titulo.pdf" target="_blank" rel="noopener noreferrer" download="Titulo">(Descargar título)</a>

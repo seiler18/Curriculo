@@ -280,6 +280,17 @@ export const certificates = [
     slide: 1,
     col: 0,
   },
+    {
+    id: "JS_PowerBI",
+    title: "Power BI",
+    img: "assets/img/JS_PowerBI.png",
+    type: "modal",
+    modalTitle: "Power BI",
+    certHref: "assets/certificados/JS_PowerBI.pdf",
+    download: "Power BI Jesus Seiler",
+    slide: 1,
+    col: 0,
+  },
 
   // --- Slide 2 / Card Right ---
   {
