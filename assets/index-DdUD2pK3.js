@@ -37,12 +37,12 @@
               <a href="#" class="dropdown-toggle nav-link text-light" data-toggle="dropdown">Descargar Curriculo</a>
               <ul class="dropdown-menu text-light text-center">
                 <li>
-                  <a class="nav-link hero-section text-light" target="_blank" href="CurriculoIngles.pdf" download="Curriculo Jesus Seiler">
+                  <a class="nav-link hero-section text-light" target="_blank" rel="noopener noreferrer" href="CurriculoIngles.pdf" download="Curriculo Jesus Seiler">
                     <b>Curriculo Ingles</b>
                   </a>
                 </li>
                 <li>
-                  <a class="nav-link hero-section text-light" target="_blank" href="Curriculo.pdf" download="Curriculo Jesus Seiler">
+                  <a class="nav-link hero-section text-light" target="_blank" rel="noopener noreferrer" href="Curriculo.pdf" download="Curriculo Jesus Seiler">
                     <b>Curriculo Español</b>
                   </a>
                 </li>
@@ -104,13 +104,13 @@
             <li>30 años — Puerto Montt, Chile</li>
             <li>Analista Administrativo &amp; de Sistemas en <strong>OPCIONES S.A.</strong></li>
             <li>Ingeniero Civil — Universidad del Zulia (Venezuela)
-              <a class="titulo" href="assets/certificados/Titulo.pdf" target="_blank" download="Titulo">(Descargar título)</a>
+              <a class="titulo" href="assets/certificados/Titulo.pdf" target="_blank" rel="noopener noreferrer" download="Titulo">(Descargar título)</a>
             </li>
             <li>Técnico de Nivel Superior en Programación y Análisis de Sistemas — IP AIEP (Chile)
-              <a class="titulo" href="assets/certificados/Titulo2.pdf" target="_blank" download="Titulo2">(Descargar título)</a>
+              <a class="titulo" href="assets/certificados/Titulo2.pdf" target="_blank" rel="noopener noreferrer" download="Titulo2">(Descargar título)</a>
             </li>
             <li>Idiomas: Español (Nativo) · Inglés Avanzado C1
-              <a class="titulo" href="assets/certificados/EF SET Certificate.pdf" target="_blank" download="EF SET Certificate">(Descargar certificado)</a>
+              <a class="titulo" href="assets/certificados/EF SET Certificate.pdf" target="_blank" rel="noopener noreferrer" download="EF SET Certificate">(Descargar certificado)</a>
             </li>
           </ul>
         </div>
@@ -225,7 +225,7 @@
       </a>
     </button>
     <p class="nestle" id="carta-trabajo">
-      <a href="assets/certificados/REFERENCIA_LABORAL.pdf" target="_blank" download="Carta Recomendación Jesús Seiler - Nestle Llanquihue">
+      <a href="assets/certificados/REFERENCIA_LABORAL.pdf" target="_blank" rel="noopener noreferrer" download="Carta Recomendación Jesús Seiler - Nestle Llanquihue">
         <img class="img-fluid my-2" src="assets/img/IMGRL.png" alt="Carta Trabajo">
       </a>
     </p>
@@ -235,19 +235,19 @@
       </a>
     </button>
     <p class="nestle" id="certificados-nestle">
-      <a href="assets/certificados/diploma de honor.jpg" target="_blank" download="Diploma Jesus Seiler">
+      <a href="assets/certificados/diploma de honor.jpg" target="_blank" rel="noopener noreferrer" download="Diploma Jesus Seiler">
         <img class="img-fluid my-2" src="assets/certificados/diploma de honor.jpg" alt="diploma">
       </a>
-      <a href="assets/certificados/CODIGO CONDUCTA Certificado Nestle .pdf" target="_blank" download="CODIGO CONDUCTA Certificado Nestle">
+      <a href="assets/certificados/CODIGO CONDUCTA Certificado Nestle .pdf" target="_blank" rel="noopener noreferrer" download="CODIGO CONDUCTA Certificado Nestle">
         <img class="img-fluid my-2" src="assets/img/CODIGO CONDUCTA Certificado Nestle .png" alt="diploma">
       </a>
-      <a href="assets/certificados/Jesus Seiler Certificado.pdf" target="_blank" download="Jesus Seiler Certificado">
+      <a href="assets/certificados/Jesus Seiler Certificado.pdf" target="_blank" rel="noopener noreferrer" download="Jesus Seiler Certificado">
         <img class="img-fluid my-2" src="assets/img/Jesus Seiler Certificado.png" alt="diploma">
       </a>
-      <a href="assets/certificados/Líderes operacionales 2025.pdf" target="_blank" download="Líderes operacionales 2025">
+      <a href="assets/certificados/Líderes operacionales 2025.pdf" target="_blank" rel="noopener noreferrer" download="Líderes operacionales 2025">
         <img class="img-fluid my-2" src="assets/img/Líderes operacionales 2025.png" alt="diploma">
       </a>
-      <a href="assets/certificados/Jesús_Seiler_ES_Programa_Nestlé_Digital_Literacy.pdf" target="_blank" download="Nestlé_Digital_Literacy">
+      <a href="assets/certificados/Jesús_Seiler_ES_Programa_Nestlé_Digital_Literacy.pdf" target="_blank" rel="noopener noreferrer" download="Nestlé_Digital_Literacy">
         <img class="img-fluid my-2" src="assets/img/Jesús_Seiler_ES_Programa_Nestlé_Digital_Literacy.png" alt="diploma">
       </a>
     </p>
@@ -348,7 +348,7 @@
             </button>
           </div>
           <div class="modal-body">
-            <a href="${e.certHref}" target="_blank" download="${e.download}">
+            <a href="${e.certHref}" target="_blank" rel="noopener noreferrer" download="${e.download}">
               <img class="img-fluid mb-3" src="${e.img}" alt="${e.title}">
             </a>
             <p><b>Presione imagen para descargar el certificado</b></p>
@@ -433,7 +433,7 @@
             <i class="fab fa-whatsapp fa-2x"></i>
           </a>
           <p>
-            <a href="mailto:ichbinseiler@gmail.com" target="_blank">
+            <a href="mailto:ichbinseiler@gmail.com" target="_blank" rel="noopener noreferrer">
               <span>Contactar por Gmail&nbsp;</span>
               <i class="fab fa-google fa-2x"></i>
             </a>
