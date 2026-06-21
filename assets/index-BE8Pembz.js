@@ -59,21 +59,19 @@ var e=Object.create,t=Object.defineProperty,n=Object.getOwnPropertyDescriptor,r=
         </div>
       </div>
     </nav>
-  `}var f=[{href:`https://seiler18.github.io/Curriculo/`,img:`assets/img/LOGO JESUS SEILER.png`,alt:`LogoJesusSeiler`,cls:`logo`},{href:`https://www.youracclaim.com/badges/5c3ed424-4321-4dfa-b1c5-ec322c126595/embedded`,img:`assets/img/logojava.png`,alt:`Logo de Java - Certificación`,cls:`logo2`},{href:`https://www.acreditta.com/credential/4476ddea-f09c-4e5b-93fa-e36f8cba5cb5`,img:`assets/img/logodevops.webp`,alt:`Logo de Fundamentos DevOps - Certificación`,cls:`logo2`},{href:`https://www.acreditta.com/credential/9f3cf4aa-bd57-42ad-93ca-04ddf485d019`,img:`assets/img/Salesforce.webp`,alt:`Ver Insignia de certificación`,cls:`logo2`},{href:`https://www.acreditta.com/credential/554fe7be-7150-43cb-8857-58be35c30b06`,img:`assets/img/Voluntarios.webp`,alt:`Ver Insignia de certificación`,cls:`logo2`},{href:`https://catalog-education.oracle.com/ords/certview/sharebadge?id=0EE370D017FDDE5093D72D0FAAA09E4B5AD04E6D9E4E32BFFC3537ECDA237F0B`,img:`assets/img/OCI.png`,alt:`Logo de OCI - Certificación`,cls:`logo2`},{href:`https://acreditta.com/credential/09287278-a942-43df-aff2-141183913973?utm_source=copy&resource_type=badge&resource=09287278-a942-43df-aff2-141183913973`,img:`assets/img/22301.webp`,alt:`Logo de Auditor Interno 22301 - Certificación`,cls:`logo2`},{href:`https://acreditta.com/credential/ad647a01-5241-4a19-82a6-f6aa62729776?utm_source=copy&resource_type=badge&resource=ad647a01-5241-4a19-82a6-f6aa62729776`,img:`assets/img/20000-1.webp`,alt:`Logo de Auditor Interno 20000-1 - Certificación`,cls:`logo2`}];function p(){return`
+  `}var f=[{href:`https://seiler18.github.io/Curriculo/`,img:`assets/img/LOGO JESUS SEILER.png`,alt:`LogoJesusSeiler`,cls:`logo`},{href:`https://www.youracclaim.com/badges/5c3ed424-4321-4dfa-b1c5-ec322c126595/embedded`,img:`assets/img/logojava.png`,alt:`Logo de Java - Certificación`,cls:`logo2`},{href:`https://www.acreditta.com/credential/4476ddea-f09c-4e5b-93fa-e36f8cba5cb5`,img:`assets/img/logodevops.webp`,alt:`Logo de Fundamentos DevOps - Certificación`,cls:`logo2`},{href:`https://www.acreditta.com/credential/9f3cf4aa-bd57-42ad-93ca-04ddf485d019`,img:`assets/img/Salesforce.webp`,alt:`Ver Insignia de certificación`,cls:`logo2`},{href:`https://www.acreditta.com/credential/554fe7be-7150-43cb-8857-58be35c30b06`,img:`assets/img/Voluntarios.webp`,alt:`Ver Insignia de certificación`,cls:`logo2`},{href:`https://catalog-education.oracle.com/ords/certview/sharebadge?id=0EE370D017FDDE5093D72D0FAAA09E4B5AD04E6D9E4E32BFFC3537ECDA237F0B`,img:`assets/img/OCI.png`,alt:`Logo de OCI - Certificación`,cls:`logo2`},{href:`https://acreditta.com/credential/09287278-a942-43df-aff2-141183913973?utm_source=copy&resource_type=badge&resource=09287278-a942-43df-aff2-141183913973`,img:`assets/img/22301.webp`,alt:`Logo de Auditor Interno 22301 - Certificación`,cls:`logo2`},{href:`https://acreditta.com/credential/ad647a01-5241-4a19-82a6-f6aa62729776?utm_source=copy&resource_type=badge&resource=ad647a01-5241-4a19-82a6-f6aa62729776`,img:`assets/img/20000-1.webp`,alt:`Logo de Auditor Interno 20000-1 - Certificación`,cls:`logo2`}];function p(e=!1){return f.map(t=>`
+      <div class="logo-item"${e?` aria-hidden="true"`:``}>
+        <a href="${t.href}" target="_blank" rel="noopener noreferrer"${e?` tabindex="-1"`:``}>
+          <img class="${t.cls}" src="${t.img}" alt="${e?``:t.alt}">
+        </a>
+      </div>
+    `).join(``)}function m(){return`
     <header class="text-light pt-5 mt-5">
       <div class="container">
         <div class="logos-container">
-          <div class="logos-carousel">
-            ${f.map(e=>`
-      <div class="logo-item">
-        <a href="${e.href}" target="_blank" rel="noopener noreferrer">
-          <img class="${e.cls}" src="${e.img}" alt="${e.alt}">
-        </a>
-      </div>
-    `).join(``)}
+          <div class="logos-track">
+            ${p(!1)+p(!0)}
           </div>
-          <button class="carousel-button prev">←</button>
-          <button class="carousel-button next">→</button>
         </div>
         <h2 class="display-3 font-weight-bold text-center header-section1 my-4"
           data-aos="fade-up" data-aos-delay="150">
@@ -89,8 +87,11 @@ var e=Object.create,t=Object.defineProperty,n=Object.getOwnPropertyDescriptor,r=
           </button>
         </div>
       </div>
+      <!-- Funde el fondo del header hacia el color de la página, para que la
+           transición con la sección "Acerca de mí" sea suave y no un borde recto. -->
+      <div class="header-fade" aria-hidden="true"></div>
     </header>
-  `}function m(){let e=document.querySelector(`.logos-carousel`),t=document.querySelector(`.carousel-button.prev`),n=document.querySelector(`.carousel-button.next`);if(!e||!t||!n)return;let r=e.querySelector(`.logo-item`).offsetWidth+20;t.addEventListener(`click`,()=>{e.scrollBy({left:-r,behavior:`smooth`})}),n.addEventListener(`click`,()=>{e.scrollBy({left:r,behavior:`smooth`})})}var h=`HTML5,CSS3,JavaScript,React,Node.js,Vue.js,Java,Spring Boot,Groovy,OFbiz,Docker,Jenkins,Maven,Git,SharePoint,MySQL,PostgreSQL,Oracle,SAP,RPA RocketBot,Office 365,Gestión de Servicios TI,Gestión Active Directory,GPOs,Entra ID,Gestión BitDefender,ISO 9001,ISO 27001,ISO 22301,ISO 20000-1,ITIL,SGSI`.split(`,`);function g(){return`
+  `}var h=`HTML5,CSS3,JavaScript,React,Node.js,Vue.js,Java,Spring Boot,Groovy,OFbiz,Docker,Jenkins,Maven,Git,SharePoint,MySQL,PostgreSQL,Oracle,SAP,RPA RocketBot,Office 365,Gestión de Servicios TI,Gestión Active Directory,GPOs,Entra ID,Gestión BitDefender,ISO 9001,ISO 27001,ISO 22301,ISO 20000-1,ITIL,SGSI`.split(`,`);function g(){return`
     <section id="about" class="container text-center my-5">
       <h2 class="display-3 text-light font-weight-bold my-4" data-aos="fade-up">Acerca de mí</h2>
       <p class="about-intro mx-auto my-4" data-aos="fade-up" data-aos-delay="100">
@@ -447,4 +448,4 @@ var e=Object.create,t=Object.defineProperty,n=Object.getOwnPropertyDescriptor,r=
         </footer>
       </div>
     </section>
-  `}var A=document.getElementById(`app`);A.innerHTML=d()+p()+g()+v()+C()+O()+k(),m();function j(e){if(!e.is(`:visible`))return;let t=e[0];t.classList.remove(`section-reveal`),t.offsetWidth,t.classList.add(`section-reveal`),l.default.refresh()}function M(e,t){let n=$(e).hide();t.forEach(e=>$(e).on(`click`,()=>{n.toggle(),j(n)}))}M(`#Conocimiento`,[`#Ocultar3`,`#mostrarConocimiento`]),M(`#Experiencia`,[`#Ocultar2`,`#mostrarExperiencia`]),M(`#Certificados`,[`#Ocultar`,`#mostrarCertificados`]),$(`#carta-trabajo`).hide(),$(`#OcultarCartaTrabajo`).on(`click`,()=>$(`#carta-trabajo`).toggle()),$(`#certificados-nestle`).hide(),$(`#OcultarCertificadosNestle`).on(`click`,()=>$(`#certificados-nestle`).toggle()),l.default.init({duration:700,easing:`ease-out-cubic`,once:!0,offset:80,disable:()=>window.matchMedia(`(prefers-reduced-motion: reduce)`).matches}),window.addEventListener(`load`,()=>l.default.refresh());function N(){document.querySelectorAll(`.goog-te-banner-frame, iframe.skiptranslate`).forEach(e=>e.style.setProperty(`display`,`none`,`important`)),document.body.style.top&&document.body.style.top!==`0px`&&document.body.style.setProperty(`top`,`0px`,`important`)}var P=new MutationObserver(N);P.observe(document.documentElement,{childList:!0,subtree:!0}),P.observe(document.body,{attributes:!0,attributeFilter:[`style`]});
+  `}var A=document.getElementById(`app`);A.innerHTML=d()+m()+g()+v()+C()+O()+k();function j(e){if(!e.is(`:visible`))return;let t=e[0];t.classList.remove(`section-reveal`),t.offsetWidth,t.classList.add(`section-reveal`),l.default.refresh()}function M(e,t){let n=$(e).hide();t.forEach(e=>$(e).on(`click`,()=>{n.toggle(),j(n)}))}M(`#Conocimiento`,[`#Ocultar3`,`#mostrarConocimiento`]),M(`#Experiencia`,[`#Ocultar2`,`#mostrarExperiencia`]),M(`#Certificados`,[`#Ocultar`,`#mostrarCertificados`]),$(`#carta-trabajo`).hide(),$(`#OcultarCartaTrabajo`).on(`click`,()=>$(`#carta-trabajo`).toggle()),$(`#certificados-nestle`).hide(),$(`#OcultarCertificadosNestle`).on(`click`,()=>$(`#certificados-nestle`).toggle()),l.default.init({duration:700,easing:`ease-out-cubic`,once:!0,offset:80,disable:()=>window.matchMedia(`(prefers-reduced-motion: reduce)`).matches}),window.addEventListener(`load`,()=>l.default.refresh());function N(){document.querySelectorAll(`.goog-te-banner-frame, iframe.skiptranslate`).forEach(e=>e.style.setProperty(`display`,`none`,`important`)),document.body.style.top&&document.body.style.top!==`0px`&&document.body.style.setProperty(`top`,`0px`,`important`)}var P=new MutationObserver(N);P.observe(document.documentElement,{childList:!0,subtree:!0}),P.observe(document.body,{attributes:!0,attributeFilter:[`style`]});

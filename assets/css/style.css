@@ -224,14 +224,25 @@ header {
     radial-gradient(1100px circle at 18% 28%, rgba(37, 99, 235, 0.28), transparent 50%),
     radial-gradient(900px circle at 82% 22%, rgba(34, 211, 238, 0.22), transparent 48%),
     linear-gradient(165deg, #0a0e1a 0%, #0c1430 45%, #0a0e1a 100%);
+  /* Cada capa más grande que el header para poder desplazarla en bucle */
+  background-size: 200% 200%, 200% 200%, 200% 200%;
+  animation: bgFlow 24s ease-in-out infinite;
 }
 
-/* Auroras: dos manchas de color difuminadas que se desplazan en bucle */
+/* Desplaza lentamente las capas del degradado → movimiento constante */
+@keyframes bgFlow {
+  0%   { background-position:   0%   0%, 100%   0%,   0%  50%; }
+  50%  { background-position: 100% 100%,   0% 100%, 100%  50%; }
+  100% { background-position:   0%   0%, 100%   0%,   0%  50%; }
+}
+
+/* Auroras: dos manchas de color difuminadas que se desplazan en bucle.
+   z-index:-2 → quedan por detrás del fundido inferior (.header-fade, -1). */
 header::before,
 header::after {
   content: "";
   position: absolute;
-  z-index: -1;
+  z-index: -2;
   width: 60vw;
   height: 60vw;
   max-width: 900px;
@@ -263,6 +274,19 @@ header::after {
   100% { transform: translate(-16vw, -10vh) scale(0.9); }
 }
 
+/* Fundido inferior: por encima de los blobs (-2) y por debajo del contenido (0).
+   Lleva el fondo del header al color de la página → transición sin borde recto. */
+.header-fade {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 45%;
+  z-index: -1;
+  pointer-events: none;
+  background: linear-gradient(to bottom, transparent 0%, var(--bg) 92%);
+}
+
 .header-section1 {
   text-align: center;
   color: #fff;
@@ -291,24 +315,31 @@ header::after {
   text-shadow: none;
 }
 
-/* ----------------------- LOGOS CARRUSEL ----------------------- */
+/* ----------------------- LOGOS CINTA (MARQUEE) ----------------------- */
 .logos-container {
   position: relative;
   margin-top: 2rem;
   overflow: hidden;
   width: 100%;
   padding: 1rem 0;
+  /* desvanece los bordes izquierdo/derecho para el efecto de cinta */
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
 }
-.logos-carousel {
+/* El track tiene la tanda de logos DUPLICADA y se desplaza media longitud
+   (una tanda + medio gap) en bucle, dando una cinta infinita sin saltos. */
+.logos-track {
+  --logo-gap: 40px;
   display: flex;
-  gap: 20px;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
+  gap: var(--logo-gap);
+  width: max-content;
+  animation: marquee 35s linear infinite;
 }
+/* Pausa la cinta al pasar el mouse, para poder hacer clic en una insignia */
+.logos-container:hover .logos-track { animation-play-state: paused; }
 .logo-item {
-  flex: 0 0 calc(30% - 10px);
+  flex: 0 0 auto;
   text-align: center;
-  overflow: hidden;
 }
 .logo, .logo2 {
   width: 150px;
@@ -321,28 +352,9 @@ header::after {
   filter: drop-shadow(0 6px 18px var(--glow-cyan));
 }
 
-.carousel-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(10, 14, 26, 0.7);
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
-  color: #fff;
-  border: 1px solid var(--border);
-  border-radius: 50%;
-  width: 42px;
-  height: 42px;
-  cursor: pointer;
-  z-index: 10;
-  transition: background 0.25s, box-shadow 0.25s, border-color 0.25s;
-}
-.carousel-button.prev { left: 10px; }
-.carousel-button.next { right: 10px; }
-.carousel-button:hover {
-  background: var(--gradient);
-  border-color: transparent;
-  box-shadow: 0 0 18px var(--glow-cyan);
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(calc(-50% - var(--logo-gap) / 2)); }
 }
 
 /* ----------------------- BOTONES BANNER (toggles secciones) ----------------------- */
@@ -694,10 +706,46 @@ header::after {
   -webkit-text-fill-color: transparent;
 }
 
-/* Encabezado de página, con aire para no quedar bajo el navbar fijo */
+/* Encabezado de página con el mismo fondo "aurora" animado del CV.
+   isolation + z-index escalonado: blobs (-2) → fundido (-1) → texto (0). */
 .portfolio .page-head {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
   text-align: center;
-  padding: 7rem 1rem 0.5rem;
+  padding: 8rem 1rem 4rem;
+  background:
+    radial-gradient(900px circle at 20% 30%, rgba(37, 99, 235, 0.28), transparent 50%),
+    radial-gradient(800px circle at 82% 25%, rgba(34, 211, 238, 0.22), transparent 48%),
+    linear-gradient(165deg, #0a0e1a 0%, #0c1430 50%, #0a0e1a 100%);
+  background-size: 200% 200%, 200% 200%, 200% 200%;
+  animation: bgFlow 24s ease-in-out infinite;
+}
+.portfolio .page-head::before,
+.portfolio .page-head::after {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  width: 60vw;
+  height: 60vw;
+  max-width: 700px;
+  max-height: 700px;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.5;
+  pointer-events: none;
+}
+.portfolio .page-head::before {
+  top: -35%;
+  left: -5%;
+  background: radial-gradient(circle, rgba(34, 211, 238, 0.5), transparent 60%);
+  animation: aurora1 18s ease-in-out infinite alternate;
+}
+.portfolio .page-head::after {
+  bottom: -35%;
+  right: -6%;
+  background: radial-gradient(circle, rgba(124, 58, 237, 0.45), transparent 60%);
+  animation: aurora2 22s ease-in-out infinite alternate;
 }
 .portfolio .page-head h2 {
   font-weight: 800;
@@ -848,7 +896,8 @@ header::after {
     transition-duration: 0.001ms !important;
     scroll-behavior: auto !important;
   }
-  header::before, header::after { animation: none !important; }
+  header, header::before, header::after,
+  .logos-track { animation: none !important; }
 }
 
 /* ----------------------- RESPONSIVE ----------------------- */
@@ -861,6 +910,6 @@ header::after {
   .header-section1 { font-size: 2.25rem; }
   h2 { font-size: 1.5rem; }
   .conocimientos, .experiencias, .certificados { font-size: 28px; }
-  .logo, .logo2 { width: 110px; }
-  .logo-item { flex: 0 0 60%; }
+  .logo, .logo2 { width: 95px; }
+  .logos-track { --logo-gap: 28px; }
 }
