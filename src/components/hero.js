@@ -49,26 +49,33 @@ const logos = [
   },
 ];
 
-export function renderHero() {
-  const logoItems = logos
+// Genera una tanda de logos. La segunda tanda (dup=true) se marca como
+// decorativa para los lectores de pantalla y se saca del orden de tabulación,
+// porque es solo la copia que permite el bucle continuo de la cinta.
+function renderLogoSet(dup = false) {
+  return logos
     .map(l => `
-      <div class="logo-item">
-        <a href="${l.href}" target="_blank" rel="noopener noreferrer">
-          <img class="${l.cls}" src="${l.img}" alt="${l.alt}">
+      <div class="logo-item"${dup ? ' aria-hidden="true"' : ''}>
+        <a href="${l.href}" target="_blank" rel="noopener noreferrer"${dup ? ' tabindex="-1"' : ''}>
+          <img class="${l.cls}" src="${l.img}" alt="${dup ? '' : l.alt}">
         </a>
       </div>
     `)
     .join('')
+}
+
+export function renderHero() {
+  // El track contiene la tanda de logos DUPLICADA: la animación lo desplaza
+  // medio ancho (una tanda) y vuelve a empezar, dando un bucle sin saltos.
+  const track = renderLogoSet(false) + renderLogoSet(true)
 
   return `
     <header class="text-light pt-5 mt-5">
       <div class="container">
         <div class="logos-container">
-          <div class="logos-carousel">
-            ${logoItems}
+          <div class="logos-track">
+            ${track}
           </div>
-          <button class="carousel-button prev">←</button>
-          <button class="carousel-button next">→</button>
         </div>
         <h2 class="display-3 font-weight-bold text-center header-section1 my-4"
           data-aos="fade-up" data-aos-delay="150">
@@ -84,22 +91,9 @@ export function renderHero() {
           </button>
         </div>
       </div>
+      <!-- Funde el fondo del header hacia el color de la página, para que la
+           transición con la sección "Acerca de mí" sea suave y no un borde recto. -->
+      <div class="header-fade" aria-hidden="true"></div>
     </header>
   `
-}
-
-export function initHero() {
-  const carousel = document.querySelector('.logos-carousel')
-  const prevButton = document.querySelector('.carousel-button.prev')
-  const nextButton = document.querySelector('.carousel-button.next')
-  if (!carousel || !prevButton || !nextButton) return
-
-  const itemWidth = carousel.querySelector('.logo-item').offsetWidth + 20
-
-  prevButton.addEventListener('click', () => {
-    carousel.scrollBy({ left: -itemWidth, behavior: 'smooth' })
-  })
-  nextButton.addEventListener('click', () => {
-    carousel.scrollBy({ left: itemWidth, behavior: 'smooth' })
-  })
 }

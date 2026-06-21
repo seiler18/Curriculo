@@ -3,7 +3,7 @@ import 'aos/dist/aos.css'
 import AOS from 'aos'
 
 import { renderNavbar } from './components/navbar.js'
-import { renderHero, initHero } from './components/hero.js'
+import { renderHero } from './components/hero.js'
 import { renderAbout } from './components/about.js'
 import { renderSkills } from './components/skills.js'
 import { renderExperience, initExperience } from './components/experience.js'
@@ -20,9 +20,6 @@ app.innerHTML =
   renderExperience() +
   renderCertificates() +
   renderFooter()
-
-// Initialize hero logo carousel
-initHero()
 
 // Dispara una animación de entrada (fadeInUp) cada vez que una sección oculta
 // se hace visible. AOS no sirve aquí porque los elementos están display:none,
