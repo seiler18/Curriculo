@@ -9,13 +9,13 @@ const techBadges = [
 
 export function renderAbout() {
   const badges = techBadges
-    .map(b => `<span class="tech-badge">${b}</span>`)
+    .map((b, i) => `<span class="tech-badge" style="--i:${i}">${b}</span>`)
     .join('')
 
   return `
     <section id="about" class="container text-center my-5">
-      <h2 class="display-3 text-light font-weight-bold my-4">Acerca de mí</h2>
-      <p class="about-intro mx-auto my-4">
+      <h2 class="display-3 text-light font-weight-bold my-4" data-aos="fade-up">Acerca de mí</h2>
+      <p class="about-intro mx-auto my-4" data-aos="fade-up" data-aos-delay="100">
         <strong>Analista Administrativo y de Sistemas</strong> especializado en gestión integrada de
         sistemas ISO, seguridad de la información y continuidad del negocio. Ingeniero Civil reconvertido
         en profesional TI, con enfoque en <strong>automatización, mejora continua y transformación digital</strong>.
@@ -23,7 +23,7 @@ export function renderAbout() {
 
       <div class="row">
         <!-- Datos y formación -->
-        <div class="col-md-4 mb-4">
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="0">
           <i class="fas fa-id-card fa-3x my-3"></i>
           <h3 class="my-3 text-light font-weight-bold">Datos &amp; Formación</h3>
           <ul class="text-light text-left">
@@ -43,7 +43,7 @@ export function renderAbout() {
         </div>
 
         <!-- Perfil profesional -->
-        <div class="col-md-4 mb-4">
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="120">
           <i class="fas fa-briefcase fa-3x my-3"></i>
           <h3 class="my-3 text-light font-weight-bold">Perfil Profesional</h3>
           <ul class="text-light text-left">
@@ -58,7 +58,7 @@ export function renderAbout() {
         </div>
 
         <!-- Habilidades técnicas -->
-        <div class="col-md-4 mb-4">
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="240">
           <i class="fas fa-laptop-code fa-3x my-3"></i>
           <h3 class="my-3 text-light font-weight-bold">Habilidades Técnicas</h3>
           <ul class="text-light text-left">
@@ -76,12 +76,12 @@ export function renderAbout() {
         </div>
       </div>
 
-      <h3 class="text-light font-weight-bold mt-4 mb-3">Stack &amp; Tecnologías</h3>
-      <div class="tech-badges">
+      <h3 class="text-light font-weight-bold mt-4 mb-3" data-aos="fade-up">Stack &amp; Tecnologías</h3>
+      <div class="tech-badges" data-aos="fade-up" data-aos-delay="100">
         ${badges}
       </div>
 
-      <p class="about-interests mx-auto mt-4">
+      <p class="about-interests mx-auto mt-4" data-aos="fade-up">
         <i class="fas fa-lightbulb"></i>
         <strong>Intereses:</strong> automatización de procesos, transformación digital, sistemas integrados,
         seguridad de la información, continuidad del negocio y mejora continua.

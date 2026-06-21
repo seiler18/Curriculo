@@ -126,7 +126,7 @@ export function renderExperience() {
   const modals = experiences.map(workModal).join('')
 
   return `
-    <button type="button" id="botonMostrarExperiencias" class="container-fluid btn-info">
+    <button type="button" id="botonMostrarExperiencias" class="container-fluid btn-info" data-aos="zoom-in">
       <a href="#Experiencia">
         <div class="experiencias text-center text-light header-section1" id="Ocultar2">Mi experiencia laboral</div>
       </a>

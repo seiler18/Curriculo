@@ -65,7 +65,7 @@ export function renderCertificates() {
   const modals = certificates.map(certModal).join('')
 
   return `
-    <button type="button" id="botonMostrarCertificados" class="container-fluid">
+    <button type="button" id="botonMostrarCertificados" class="container-fluid" data-aos="zoom-in">
       <a href="#Certificados">
         <div class="certificados text-center font-weight-bold text-light header-section1" id="Ocultar">
           Certificados Obtenidos

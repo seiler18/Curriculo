@@ -7,9 +7,15 @@ URL en producción: https://seiler18.github.io/Curriculo/
 ## Stack tecnológico
 - **Build tool:** Vite 6 (migrado desde un index.html monolítico de 2043 líneas; Dependabot lo actualizó de v4 a v6 automáticamente)
 - **Frontend:** HTML/CSS/JS vanilla + Bootstrap 4.2.1 (CDN) + jQuery 3.3.1 (CDN)
+- **Animaciones:** AOS (Animate On Scroll) — dependencia npm, importada y bundleada por Vite en `main.js`
 - **Iconos:** Font Awesome 5.6.3 (CDN) + Font Awesome 6.1.1 (local en assets/css/all.css)
 - **Fuentes:** Google Fonts Raleway
 - **Deploy:** GitHub Actions → rama `gh-pages` → GitHub Pages
+
+## Herramientas de desarrollo (MCP)
+- **Playwright MCP** (`@playwright/mcp`): configurado en scope local del proyecto (`~/.claude.json`).
+  Permite a Claude Code abrir el sitio en un navegador real, tomar capturas, probar responsive
+  y verificar animaciones/modales en vivo. Requiere reiniciar Claude Code para activarse.
 
 ## Estructura de archivos clave
 
@@ -68,7 +74,7 @@ Curriculo/
 El `index.html` original tenía 2043 líneas con todo inline. Se migró a Vite para separar datos de presentación. Se eligió Vite sobre un framework (React/Vue) para mantener el stack vanilla que el usuario ya conoce.
 
 ### Por qué los assets no están en public/
-Las imágenes de CSS (`url('../img/header1.jpg')`) son procesadas por Vite automáticamente cuando se importa `style.css` desde `main.js`. Las imágenes referenciadas en HTML strings (componentes JS) no las procesa Vite, por eso el script `copy-assets.js` las copia manualmente a `dist/` después del build.
+Las imágenes de CSS (`url('../img/header1.webp')`) son procesadas por Vite automáticamente cuando se importa `style.css` desde `main.js`. Las imágenes referenciadas en HTML strings (componentes JS) no las procesa Vite, por eso el script `copy-assets.js` las copia manualmente a `dist/` después del build.
 
 ### Cómo funciona el deploy
 1. `git push origin main` dispara GitHub Actions
@@ -76,6 +82,20 @@ Las imágenes de CSS (`url('../img/header1.jpg')`) son procesadas por Vite autom
 3. `npm run build` = `vite build` + `node scripts/copy-assets.js`
 4. El contenido de `dist/` se sube a la rama `gh-pages`
 5. GitHub Pages sirve `gh-pages` en `seiler18.github.io/Curriculo/`
+
+### Sistema de animaciones (AOS + reveal manual)
+Hay DOS mecanismos de animación, por una razón concreta:
+1. **AOS** (`data-aos="fade-up|zoom-in"`, `data-aos-delay`) se usa SOLO en contenido
+   **siempre visible** (hero, about, badges, botones-banner, footer). Se inicializa en
+   `main.js` con `AOS.init({ once:true, ... })` y respeta `prefers-reduced-motion`.
+2. **`.section-reveal`** (animación CSS `sectionReveal` en `style.css`) se usa en las
+   secciones que están `display:none` y se despliegan con botón (`#Conocimiento`,
+   `#Experiencia`, `#Certificados`). AOS NO funciona ahí porque marca los elementos con
+   `opacity:0` y se quedan invisibles si el scroll ya pasó. La función `setupToggle()` en
+   `main.js` añade la clase al hacer visible la sección (con reflow forzado para re-disparar)
+   y llama `AOS.refresh()`.
+**Regla:** nunca pongas `data-aos` dentro de una sección oculta por toggle; usa el reveal CSS.
+Los badges de tecnología llevan `style="--i:N"` para escalonar su entrada vía CSS puro.
 
 ### jQuery y Bootstrap como globals
 jQuery y Bootstrap JS se cargan como scripts CDN en `index.html` ANTES del módulo Vite. Los componentes usan `$` como global. Esto funciona porque `<script type="module">` es diferido (deferred) y los scripts CDN son síncronos, por lo tanto jQuery siempre está disponible cuando el módulo ejecuta.

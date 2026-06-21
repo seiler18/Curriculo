@@ -27,11 +27,11 @@
 <link href="assets/css/all.css" rel="stylesheet">
 
   </head>
-  <body>
+  <body class="portfolio">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <div class="container">
-        <h1 class="font-weight-bold text-light header-section1">Ejemplos</h1>
+        <a class="brand" href="index.html">Portafolio</a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -39,47 +39,43 @@
 
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
-            <li1 class="nav-item">
-              <a class="nav-link hero-section text-light" href="index.html">Volver al Inicio</a>
-            </li1>
-            <li1 class="nav-item">
-              <a class="nav-link hero-section text-light" href="ejemplos_index.html">Menú</a>
-            </li1>
-            <li1>
-              <div id="google_translate_element" class="nav-link hero-section text-light google">
-            </div></li1>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Volver al Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ejemplos_index.html">Menú</a>
+            </li>
+            <li class="nav-item">
+              <div id="google_translate_element" class="nav-link google"></div>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
 
-<br/>
-<br/>
-<br/>
-    <section id="diseñoaplicaciones" class="container-fluid my-5 p-5 bg-dark ">
-      <div id="ejercicio1"><h2 class=" font-weight-bold text-light header-section1">Aplicaciones y diseño web</h2></div>
-    </section>
+    <header class="page-head">
+      <h2>Aplicaciones y diseño web</h2>
+      <p>Proyectos desarrollados aplicando distintas tecnologías y conocimientos.</p>
+    </header>
 
-
-    
-    <section class="container-fluid my-5 p-5 bg-dark ">
-    <a class="btn btn-dark nav-link  text-light btn-lg"  href="./AnalizadorImagen/analizador.html">Analizador de Imagen - Computer Vision (Azure)</a></li>
-    <a title="Proyecto desarrollando el front y back, usando diferentes dependencias , Thymeleaf , Hibernate, etc " class="btn btn-dark nav-link  text-light btn-lg" href="https://stormy-taiga-93896-fe946738c15d.herokuapp.com/">(Spring - Thymeleaf) Registro Persona</a>
-    <a title="Proyecto desarrollando el front y back, usando diferentes dependencias , Thymeleaf , Hibernate, etc " class="btn btn-dark nav-link  text-light btn-lg" href="https://appmanageevents-6fe8c2902944.herokuapp.com/"> (Spring - Thymeleaf) Registro Eventos</a>
-    <a title="Proyecto desarrollando el front , practicando angular " class="btn btn-dark nav-link  text-light btn-lg" href="https://seiler18.github.io/AngularCrud/">(Angular) Aplicación para Documentos</a>
-    <a class="btn btn-dark nav-link  text-light btn-lg" href="pokemon.html">(Ajax-JQuery-API) Pokemon</a>
-    <a class="btn btn-dark nav-link  text-light btn-lg" href="ejemplos.html">(Ajax-JQuery-API) Lista ciudades</a>
-    <a class="btn btn-dark nav-link  text-light btn-lg" target ="_blank" href="https://seiler18.github.io/RayenApp/" rel="noopener noreferrer">(React) Rayen App Buscador de Imagenes</a>
-    <a class="btn btn-dark nav-link  text-light btn-lg" target ="_blank" href="https://seiler18.github.io/Carrito/" rel="noopener noreferrer">(React) Carrito de Compras</a>
-    <a class="btn btn-dark nav-link  text-light btn-lg"  href="./ReservaHoras/index.html">(JS) Reserva Horas</a>
-    <a class="btn btn-dark nav-link  text-light btn-lg"  href="./FormularioJAVASCRIPT/index.html">(JS) Validación de Registro</a>
-    <a class="btn btn-dark nav-link  text-light btn-lg"  href="./CalculadoraJAVASCRIPT/index.html">(JS) Calculadora</a>
-    <a class="btn btn-dark nav-link  text-light btn-lg"  href="./Landing-Adalid-master/index.html">Diseño Di Buffala</a>
-    <a class="btn btn-dark nav-link  text-light btn-lg"  href="./Desafio Suricata/index.html">Diseño Suricata</a>
-    <a class="btn btn-dark nav-link  text-light btn-lg"  href="./Desafio Cuppon/index.html">Diseño Couppon</a>
-    <a class="btn btn-dark nav-link  text-light btn-lg"  href="./Paginaweb/index.html">Diseño Coffe</a>
-    <a class="btn btn-dark nav-link  text-light btn-lg"  href="./Iguana Page/index.html">Diseño Iguana Page</a>
-    <a class="btn btn-dark nav-link  text-light btn-lg"  href="./desafio/index.html">Aprendiendo Media Queries</a>
+    <section class="portfolio-grid">
+      <a class="portfolio-card" href="./AnalizadorImagen/analizador.html"><i class="fas fa-image"></i>Analizador de Imagen — Computer Vision (Azure)</a>
+      <a class="portfolio-card" title="Front y back con Thymeleaf, Hibernate, etc." href="https://stormy-taiga-93896-fe946738c15d.herokuapp.com/"><i class="fas fa-leaf"></i>(Spring · Thymeleaf) Registro Persona</a>
+      <a class="portfolio-card" title="Front y back con Thymeleaf, Hibernate, etc." href="https://appmanageevents-6fe8c2902944.herokuapp.com/"><i class="fas fa-calendar-check"></i>(Spring · Thymeleaf) Registro Eventos</a>
+      <a class="portfolio-card" title="Práctica con Angular" href="https://seiler18.github.io/AngularCrud/"><i class="fab fa-angular"></i>(Angular) Aplicación para Documentos</a>
+      <a class="portfolio-card" href="pokemon.html"><i class="fas fa-dragon"></i>(Ajax · jQuery · API) Pokémon</a>
+      <a class="portfolio-card" href="ejemplos.html"><i class="fas fa-city"></i>(Ajax · jQuery · API) Lista ciudades</a>
+      <a class="portfolio-card" target="_blank" rel="noopener noreferrer" href="https://seiler18.github.io/RayenApp/"><i class="fab fa-react"></i>(React) Rayen App — Buscador de Imágenes</a>
+      <a class="portfolio-card" target="_blank" rel="noopener noreferrer" href="https://seiler18.github.io/Carrito/"><i class="fas fa-shopping-cart"></i>(React) Carrito de Compras</a>
+      <a class="portfolio-card" href="./ReservaHoras/index.html"><i class="fas fa-clock"></i>(JS) Reserva de Horas</a>
+      <a class="portfolio-card" href="./FormularioJAVASCRIPT/index.html"><i class="fas fa-clipboard-check"></i>(JS) Validación de Registro</a>
+      <a class="portfolio-card" href="./CalculadoraJAVASCRIPT/index.html"><i class="fas fa-calculator"></i>(JS) Calculadora</a>
+      <a class="portfolio-card" href="./Landing-Adalid-master/index.html"><i class="fas fa-pizza-slice"></i>Diseño Di Buffala</a>
+      <a class="portfolio-card" href="./Desafio Suricata/index.html"><i class="fas fa-paw"></i>Diseño Suricata</a>
+      <a class="portfolio-card" href="./Desafio Cuppon/index.html"><i class="fas fa-tags"></i>Diseño Couppon</a>
+      <a class="portfolio-card" href="./Paginaweb/index.html"><i class="fas fa-mug-hot"></i>Diseño Coffe</a>
+      <a class="portfolio-card" href="./Iguana Page/index.html"><i class="fas fa-dragon"></i>Diseño Iguana Page</a>
+      <a class="portfolio-card" href="./desafio/index.html"><i class="fas fa-mobile-alt"></i>Aprendiendo Media Queries</a>
     </section>
 
 

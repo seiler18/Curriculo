@@ -2,7 +2,7 @@ export function renderFooter() {
   return `
     <section id="contact">
       <div class="container-footer text-light">
-        <footer class="text-center my-5 text-light" id="footer">
+        <footer class="text-center my-5 text-light" id="footer" data-aos="fade-up">
           <h1 class="font-weight-bold">Mis redes sociales</h1>
           <p>
             <a href="https://www.facebook.com/IchBinSeiler" target="_blank" rel="noopener noreferrer">

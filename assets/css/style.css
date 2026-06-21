@@ -208,33 +208,59 @@ body { top: 0 !important; position: static !important; }
 #goog-gt-tt, .goog-te-balloon-frame { display: none !important; }
 
 /* ----------------------- HEADER / HERO ----------------------- */
+/* Fondo "aurora/tech" 100% CSS: degradado oscuro de base + dos blobs
+   difuminados que derivan lentamente. Sin imágenes → carga instantánea,
+   sin recortes y a juego con el tema oscuro de la página. */
 header {
-  background-image: url("../img/header1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding-bottom: 40rem;
-  animation: header 15s infinite;
+  position: relative;
+  isolation: isolate;
+  min-height: 80vh;
+  padding-bottom: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   overflow: hidden;
-  -webkit-mask-image:
-    linear-gradient(to bottom, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%),
-    radial-gradient(circle, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%);
-  mask-image:
-    linear-gradient(to bottom, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%),
-    radial-gradient(circle, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%);
-  -webkit-mask-composite: destination-in;
-  mask-composite: intersect;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-size: cover;
-  mask-size: cover;
+  background:
+    radial-gradient(1100px circle at 18% 28%, rgba(37, 99, 235, 0.28), transparent 50%),
+    radial-gradient(900px circle at 82% 22%, rgba(34, 211, 238, 0.22), transparent 48%),
+    linear-gradient(165deg, #0a0e1a 0%, #0c1430 45%, #0a0e1a 100%);
 }
 
-@keyframes header {
-  0%, 25%   { background-image: url("../img/header1.jpg"); }
-  30%, 55%  { background-image: url("../img/header2.jpg"); }
-  60%, 80%  { background-image: url("../img/header3.jpg"); }
-  85%, 100% { background-image: url("../img/header4.jpg"); }
+/* Auroras: dos manchas de color difuminadas que se desplazan en bucle */
+header::before,
+header::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 60vw;
+  height: 60vw;
+  max-width: 900px;
+  max-height: 900px;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.55;
+  pointer-events: none;
+}
+header::before {
+  top: -12%;
+  left: -6%;
+  background: radial-gradient(circle, rgba(34, 211, 238, 0.55), transparent 60%);
+  animation: aurora1 18s ease-in-out infinite alternate;
+}
+header::after {
+  bottom: -8%;
+  right: -8%;
+  background: radial-gradient(circle, rgba(124, 58, 237, 0.45), transparent 60%);
+  animation: aurora2 22s ease-in-out infinite alternate;
+}
+
+@keyframes aurora1 {
+  0%   { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(18vw, 12vh) scale(1.25); }
+}
+@keyframes aurora2 {
+  0%   { transform: translate(0, 0) scale(1.1); }
+  100% { transform: translate(-16vw, -10vh) scale(0.9); }
 }
 
 .header-section1 {
@@ -652,16 +678,189 @@ header {
 }
 .bienvenidosTEXT, .titulo, .hero-section { animation: none; }
 
+/* ===================== PÁGINAS DE PORTAFOLIO =====================
+   Estilos para las páginas estáticas que enlazan este CSS:
+   ejemplos_index.html, ejemplos.html y pokemon.html.
+   Todo va scopeado con body.portfolio para no afectar el CV principal. */
+
+/* Marca/título en el navbar de páginas internas (reemplaza el h1 con stroke) */
+.portfolio .brand {
+  margin: 0;
+  font-weight: 800;
+  font-size: 1.5rem;
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Encabezado de página, con aire para no quedar bajo el navbar fijo */
+.portfolio .page-head {
+  text-align: center;
+  padding: 7rem 1rem 0.5rem;
+}
+.portfolio .page-head h2 {
+  font-weight: 800;
+  font-size: clamp(2rem, 5vw, 3rem);
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.portfolio .page-head p { color: var(--text-muted); margin-top: 0.5rem; }
+
+/* Grid de tarjetas de proyectos (ejemplos_index) */
+.portfolio .portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
+  gap: 1.1rem;
+  max-width: 1100px;
+  margin: 1.5rem auto 3rem;
+  padding: 0 1rem;
+}
+.portfolio .portfolio-card {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1.1rem 1.25rem;
+  background: linear-gradient(135deg, #15213f 0%, #0e2a3a 100%);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+.portfolio .portfolio-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--border-hover);
+  box-shadow: 0 10px 30px var(--glow), 0 0 0 1px var(--border-hover) inset;
+  color: #fff;
+}
+.portfolio .portfolio-card i {
+  color: var(--cyan);
+  font-size: 1.3rem;
+  flex-shrink: 0;
+  width: 1.5rem;
+  text-align: center;
+}
+
+/* Panel central reutilizable para utilidades (tabla ciudades, pokedex) */
+.portfolio .panel {
+  max-width: 920px;
+  margin: 1.5rem auto 3rem;
+  padding: 1.75rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+/* Botón de acción (ej. "Buscar") */
+.portfolio .btn-action {
+  background: var(--gradient);
+  color: #fff;
+  border: none;
+  border-radius: 100px;
+  padding: 0.55rem 1.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: box-shadow 0.25s, transform 0.25s;
+}
+.portfolio .btn-action:hover {
+  box-shadow: 0 0 24px var(--glow-cyan);
+  transform: translateY(-2px);
+}
+
+/* Tablas legibles sobre fondo oscuro */
+.portfolio .table {
+  color: var(--text);
+  background: var(--surface-2);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  margin-top: 1rem;
+}
+.portfolio .table thead th {
+  background: #15213f;
+  color: #fff;
+  border-color: var(--border);
+}
+.portfolio .table td,
+.portfolio .table th { border-color: var(--border); }
+.portfolio .table tbody tr:hover { background: rgba(34, 211, 238, 0.06); }
+
+/* Controles de formulario (pokemon select) */
+.portfolio .form-control {
+  background: var(--surface-2);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+}
+.portfolio .form-control:focus {
+  background: var(--surface-2);
+  color: var(--text);
+  border-color: var(--border-hover);
+  box-shadow: 0 0 0 0.2rem var(--glow);
+}
+
+/* DataTables: controles legibles sobre el tema oscuro */
+.portfolio .dataTables_wrapper,
+.portfolio .dataTables_wrapper .dataTables_info,
+.portfolio .dataTables_wrapper label { color: var(--text); }
+.portfolio .dataTables_wrapper input,
+.portfolio .dataTables_wrapper select {
+  background: var(--surface-2);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+}
+.portfolio .dataTables_wrapper .paginate_button { color: var(--text) !important; }
+
+/* ----------------------- ANIMACIONES DE ENTRADA ----------------------- */
+/* Las secciones que se despliegan con botón (Conocimiento, Experiencia,
+   Certificados) no pueden usar AOS porque están display:none. Esta clase
+   se añade vía JS al hacerlas visibles y dispara un fade-in + slide-up. */
+@keyframes sectionReveal {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.section-reveal {
+  animation: sectionReveal 0.6s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+
+/* Entrada escalonada de los badges de tecnología (sin librería, solo CSS) */
+@keyframes badgePop {
+  from { opacity: 0; transform: translateY(10px) scale(0.92); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+.tech-badges.aos-animate .tech-badge {
+  animation: badgePop 0.45s ease-out both;
+}
+.tech-badges.aos-animate .tech-badge:nth-child(n)   { animation-delay: calc(20ms * var(--i, 0)); }
+
+/* Suaviza el desplazamiento al navegar por anclas internas */
+:focus-visible { outline: 2px solid var(--cyan); outline-offset: 2px; }
+
+/* Accesibilidad: si el usuario pide menos movimiento, lo desactivamos */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+  header::before, header::after { animation: none !important; }
+}
+
 /* ----------------------- RESPONSIVE ----------------------- */
 @media (max-width: 768px) {
   header {
-    background-size: contain;
-    background-position: top center;
-    padding-bottom: 20rem;
+    min-height: 70vh;
+    padding-bottom: 6rem;
   }
   .container { padding: 1rem; }
+  .header-section1 { font-size: 2.25rem; }
   h2 { font-size: 1.5rem; }
   .conocimientos, .experiencias, .certificados { font-size: 28px; }
-  .logo, .logo2 { width: 120px; }
-  .logo-item { flex: 0 0 100%; }
+  .logo, .logo2 { width: 110px; }
+  .logo-item { flex: 0 0 60%; }
 }

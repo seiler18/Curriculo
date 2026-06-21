@@ -1,0 +1,207 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - navigation [ref=e3]:
+      - generic [ref=e4]:
+        - heading "Bienvenidos Bienvenidos" [level=1] [ref=e5]:
+          - link "Bienvenidos Bienvenidos" [ref=e6] [cursor=pointer]:
+            - /url: ./ejemplos_index.html
+            - img "Bienvenidos" [ref=e7]
+            - text: Bienvenidos
+        - button "Toggle navigation" [ref=e8] [cursor=pointer]
+        - text: ▹ ▹ ▹ ▹ ▹ ▹ ▹ ▹ ▹ ▹ ▹ ▹ ▹ ▹ ▹ ▹ ▹ ▹ ▹
+    - banner [ref=e10]:
+      - generic [ref=e11]:
+        - generic [ref=e12]:
+          - generic [ref=e13]:
+            - link "LogoJesusSeiler" [ref=e15] [cursor=pointer]:
+              - /url: https://seiler18.github.io/Curriculo/
+              - img "LogoJesusSeiler" [ref=e16]
+            - link "Logo de Java - Certificación" [ref=e18] [cursor=pointer]:
+              - /url: https://www.youracclaim.com/badges/5c3ed424-4321-4dfa-b1c5-ec322c126595/embedded
+              - img "Logo de Java - Certificación" [ref=e19]
+            - link "Logo de Fundamentos DevOps - Certificación" [ref=e21] [cursor=pointer]:
+              - /url: https://www.acreditta.com/credential/4476ddea-f09c-4e5b-93fa-e36f8cba5cb5
+              - img "Logo de Fundamentos DevOps - Certificación" [ref=e22]
+            - link "Ver Insignia de certificación" [ref=e24] [cursor=pointer]:
+              - /url: https://www.acreditta.com/credential/9f3cf4aa-bd57-42ad-93ca-04ddf485d019
+              - img "Ver Insignia de certificación" [ref=e25]
+            - link "Ver Insignia de certificación" [ref=e27] [cursor=pointer]:
+              - /url: https://www.acreditta.com/credential/554fe7be-7150-43cb-8857-58be35c30b06
+              - img "Ver Insignia de certificación" [ref=e28]
+            - link "Logo de OCI - Certificación" [ref=e30] [cursor=pointer]:
+              - /url: https://catalog-education.oracle.com/ords/certview/sharebadge?id=0EE370D017FDDE5093D72D0FAAA09E4B5AD04E6D9E4E32BFFC3537ECDA237F0B
+              - img "Logo de OCI - Certificación" [ref=e31]
+            - link "Logo de Auditor Interno 22301 - Certificación" [ref=e33] [cursor=pointer]:
+              - /url: https://acreditta.com/credential/09287278-a942-43df-aff2-141183913973?utm_source=copy&resource_type=badge&resource=09287278-a942-43df-aff2-141183913973
+              - img "Logo de Auditor Interno 22301 - Certificación" [ref=e34]
+            - link "Logo de Auditor Interno 20000-1 - Certificación" [ref=e36] [cursor=pointer]:
+              - /url: https://acreditta.com/credential/ad647a01-5241-4a19-82a6-f6aa62729776?utm_source=copy&resource_type=badge&resource=ad647a01-5241-4a19-82a6-f6aa62729776
+              - img "Logo de Auditor Interno 20000-1 - Certificación" [ref=e37]
+          - button "←" [ref=e38] [cursor=pointer]
+          - button "→" [ref=e39] [cursor=pointer]
+        - heading "Innovar es la clave del éxito" [level=2] [ref=e40]
+        - button "Proyectos realizados aplicando los distintos conocimientos" [ref=e42] [cursor=pointer]:
+          - link "Proyectos realizados aplicando los distintos conocimientos" [ref=e43]:
+            - /url: ./ejemplos_index.html
+            - paragraph [ref=e44]: Proyectos realizados aplicando los distintos conocimientos
+    - generic [ref=e45]:
+      - heading "Acerca de mí" [level=2] [ref=e46]
+      - paragraph [ref=e47]:
+        - strong [ref=e48]: Analista Administrativo y de Sistemas
+        - text: especializado en gestión integrada de sistemas ISO, seguridad de la información y continuidad del negocio. Ingeniero Civil reconvertido en profesional TI, con enfoque en
+        - strong [ref=e49]: automatización, mejora continua y transformación digital
+        - text: .
+      - generic [ref=e50]:
+        - generic [ref=e51]:
+          - generic [ref=e52]: 
+          - heading "Datos & Formación" [level=3] [ref=e53]
+          - list [ref=e54]:
+            - listitem [ref=e55]: ▹ Jesús Enrique Seiler Velasquez
+            - listitem [ref=e56]: ▹ 32 años — Puerto Montt, Chile
+            - listitem [ref=e57]:
+              - text: ▹ Analista Administrativo & de Sistemas en
+              - strong [ref=e58]: OPCIONES S.A.
+            - listitem [ref=e59]:
+              - text: ▹ Ingeniero Civil — Universidad del Zulia (Venezuela)
+              - link "(Descargar título)" [ref=e60] [cursor=pointer]:
+                - /url: assets/certificados/Titulo.pdf
+            - listitem [ref=e61]:
+              - text: ▹ Técnico de Nivel Superior en Programación y Análisis de Sistemas — IP AIEP (Chile)
+              - link "(Descargar título)" [ref=e62] [cursor=pointer]:
+                - /url: assets/certificados/Titulo2.pdf
+            - listitem [ref=e63]:
+              - text: "▹ Idiomas: Español (Nativo) · Inglés Avanzado C1"
+              - link "(Descargar certificado)" [ref=e64] [cursor=pointer]:
+                - /url: assets/certificados/EF SET Certificate.pdf
+        - generic [ref=e65]:
+          - generic [ref=e66]: 
+          - heading "Perfil Profesional" [level=3] [ref=e67]
+          - list [ref=e68]:
+            - listitem [ref=e69]: ▹ Gestión de sistemas integrados ISO 9001, 14001, 45001, 27001, 22301 y 20000-1
+            - listitem [ref=e70]: ▹ Administrador de SharePoint — repositorio central de documentación
+            - listitem [ref=e71]: ▹ Implementación y mantenimiento de SGSI (ISO/IEC 27001)
+            - listitem [ref=e72]: ▹ Continuidad del negocio (ISO 22301) y gestión de servicios TI (ISO 20000-1)
+            - listitem [ref=e73]: ▹ Auditor Interno en Normas ISO
+            - listitem [ref=e74]: ▹ Automatización de procesos y desarrollo de soluciones administrativas
+            - listitem [ref=e75]: ▹ Experiencia previa en gestión SAP y operaciones logísticas (Nestlé Chile)
+        - generic [ref=e76]:
+          - generic [ref=e77]: 
+          - heading "Habilidades Técnicas" [level=3] [ref=e78]
+          - list [ref=e79]:
+            - listitem [ref=e80]:
+              - text: ▹
+              - strong [ref=e81]: "Web:"
+              - text: HTML, CSS, JavaScript, React, Node.js, Vue.js
+            - listitem [ref=e82]:
+              - text: ▹
+              - strong [ref=e83]: "Backend:"
+              - text: Java, Spring Boot, Groovy, OFbiz
+            - listitem [ref=e84]:
+              - text: ▹
+              - strong [ref=e85]: "Seguridad & Gestión:"
+              - text: SGSI, Auditoría ISO, Gestión de Riesgos, ITIL
+            - listitem [ref=e86]:
+              - text: ▹
+              - strong [ref=e87]: "DevOps & Herramientas:"
+              - text: Docker, Jenkins, Maven, Git, SharePoint
+            - listitem [ref=e88]:
+              - text: ▹
+              - strong [ref=e89]: "Bases de datos:"
+              - text: MySQL, PostgreSQL, Oracle
+            - listitem [ref=e90]:
+              - text: ▹
+              - strong [ref=e91]: "ERP & Ofimática:"
+              - text: SAP, OFbiz, Office 365, RPA RocketBot Nivel 2
+            - listitem [ref=e92]:
+              - text: ▹ Conocimientos en Transacciones SAP
+              - button "Click para ver" [ref=e93] [cursor=pointer]
+      - heading "Stack & Tecnologías" [level=3] [ref=e94]
+      - generic [ref=e95]:
+        - generic [ref=e96]: HTML5
+        - generic [ref=e97]: CSS3
+        - generic [ref=e98]: JavaScript
+        - generic [ref=e99]: React
+        - generic [ref=e100]: Node.js
+        - generic [ref=e101]: Vue.js
+        - generic [ref=e102]: Java
+        - generic [ref=e103]: Spring Boot
+        - generic [ref=e104]: Groovy
+        - generic [ref=e105]: OFbiz
+        - generic [ref=e106]: Docker
+        - generic [ref=e107]: Jenkins
+        - generic [ref=e108]: Maven
+        - generic [ref=e109]: Git
+        - generic [ref=e110]: SharePoint
+        - generic [ref=e111]: MySQL
+        - generic [ref=e112]: PostgreSQL
+        - generic [ref=e113]: Oracle
+        - generic [ref=e114]: SAP
+        - generic [ref=e115]: RPA RocketBot
+        - generic [ref=e116]: Office 365
+        - generic [ref=e117]: Gestión de Servicios TI
+        - generic [ref=e118]: Gestión Active Directory
+        - generic [ref=e119]: GPOs
+        - generic [ref=e120]: Entra ID
+        - generic [ref=e121]: Gestión BitDefender
+        - generic [ref=e122]: ISO 9001
+        - generic [ref=e123]: ISO 27001
+        - generic [ref=e124]: ISO 22301
+        - generic [ref=e125]: ISO 20000-1
+        - generic [ref=e126]: ITIL
+        - generic [ref=e127]: SGSI
+      - paragraph [ref=e128]:
+        - generic [ref=e129]: 
+        - strong [ref=e130]: "Intereses:"
+        - text: automatización de procesos, transformación digital, sistemas integrados, seguridad de la información, continuidad del negocio y mejora continua.
+    - button "Conocimientos de programación adquiridos en el ultimo año" [ref=e131]:
+      - link "Conocimientos de programación adquiridos en el ultimo año" [ref=e132] [cursor=pointer]:
+        - /url: "#Conocimiento"
+        - heading "Conocimientos de programación adquiridos en el ultimo año" [level=3] [ref=e133]
+    - text: 
+    - button "Mi experiencia laboral" [ref=e134]:
+      - link "Mi experiencia laboral" [ref=e135] [cursor=pointer]:
+        - /url: "#Experiencia"
+        - generic [ref=e136]: Mi experiencia laboral
+    - button "Certificados Obtenidos" [ref=e137]:
+      - link "Certificados Obtenidos" [ref=e138] [cursor=pointer]:
+        - /url: "#Certificados"
+        - generic [ref=e139]: Certificados Obtenidos
+    - generic [ref=e142]:
+      - heading "Mis redes sociales" [level=1] [ref=e143]
+      - paragraph [ref=e144]:
+        - link " Facebook" [ref=e145] [cursor=pointer]:
+          - /url: https://www.facebook.com/IchBinSeiler
+          - generic [ref=e146]: 
+          - text: Facebook
+        - link " Twitter" [ref=e147] [cursor=pointer]:
+          - /url: https://www.twitter.com/Ich_BinSeiler
+          - generic [ref=e148]: 
+          - text: Twitter
+      - paragraph [ref=e149]:
+        - link " Instagram" [ref=e150] [cursor=pointer]:
+          - /url: https://www.instagram.com/ichbinseiler
+          - generic [ref=e151]: 
+          - text: Instagram
+        - link " Gitlab" [ref=e152] [cursor=pointer]:
+          - /url: https://gitlab.com/seiler18
+          - generic [ref=e153]: 
+          - text: Gitlab
+      - link " Github" [ref=e154] [cursor=pointer]:
+        - /url: https://github.com/seiler18
+        - generic [ref=e155]: 
+        - text: Github
+      - link " LinkedIn" [ref=e156] [cursor=pointer]:
+        - /url: https://www.linkedin.com/in/ichbinseiler/
+        - generic [ref=e157]: 
+        - text: LinkedIn
+      - link "Contactar via WhatsApp " [ref=e158] [cursor=pointer]:
+        - /url: https://api.whatsapp.com/send?phone=+56953292612
+        - text: Contactar via WhatsApp
+        - generic [ref=e159]: 
+      - paragraph [ref=e160]:
+        - link "Contactar por Gmail " [ref=e161] [cursor=pointer]:
+          - /url: mailto:ichbinseiler@gmail.com
+          - text: Contactar por Gmail
+          - generic [ref=e162]: 
+      - paragraph [ref=e163]: ©Jesús Seiler 2026. Todos los derechos reservados.
+  - img [ref=e166]

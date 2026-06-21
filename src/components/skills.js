@@ -18,7 +18,7 @@ export function renderSkills() {
     .join('')
 
   return `
-    <button type="button" id="botonMostrarConocimientos" class="container-fluid btn-info">
+    <button type="button" id="botonMostrarConocimientos" class="container-fluid btn-info" data-aos="zoom-in">
       <a href="#Conocimiento">
         <h3 class="conocimientos text-light my-3" id="Ocultar3">
           Conocimientos de programación adquiridos en el ultimo año

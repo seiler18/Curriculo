@@ -70,10 +70,11 @@ export function renderHero() {
           <button class="carousel-button prev">←</button>
           <button class="carousel-button next">→</button>
         </div>
-        <h2 class="display-3 font-weight-bold text-center header-section1 my-4">
+        <h2 class="display-3 font-weight-bold text-center header-section1 my-4"
+          data-aos="fade-up" data-aos-delay="150">
           Innovar es la clave del éxito
         </h2>
-        <div class="text-center">
+        <div class="text-center" data-aos="fade-up" data-aos-delay="300">
           <button type="button" id="mostrarProyectos" class="mt-5 btn btn-dark">
             <a href="./ejemplos_index.html">
               <p class="conocimientos text-light my-4">
