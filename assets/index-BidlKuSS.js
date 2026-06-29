@@ -87,6 +87,8 @@ var e=Object.create,t=Object.defineProperty,n=Object.getOwnPropertyDescriptor,r=
           </button>
         </div>
       </div>
+      <!-- Capa decorativa: grilla/rayas "tech" que derivan detrás del título. -->
+      <div class="header-grid" aria-hidden="true"></div>
       <!-- Funde el fondo del header hacia el color de la página, para que la
            transición con la sección "Acerca de mí" sea suave y no un borde recto. -->
       <div class="header-fade" aria-hidden="true"></div>
