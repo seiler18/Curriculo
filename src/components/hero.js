@@ -47,6 +47,12 @@ const logos = [
     alt: "Logo de Auditor Interno 20000-1 - Certificación",
     cls: "logo2",
   },
+    {
+    href: "https://www.credly.com/badges/eefb478a-b58c-4578-8496-eb50fc0af1be/public_url",
+    img: "assets/img/GoogleAIEssentialsBadge.png",
+    alt: "Badge de Google AI Essentials - Certificación",
+    cls: "logo2",
+  },
 ];
 
 // Genera una tanda de logos. La segunda tanda (dup=true) se marca como

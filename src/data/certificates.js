@@ -91,6 +91,17 @@ export const certificates = [
     slide: 0,
     col: 0,
   },
+      {
+    id: "IAGoogle",
+    title: "Google AI Essentials V1",
+    img: "assets/img/GoogleAIEssentials.png",
+    type: "modal",
+    modalTitle:"Google AI Essentials V1",
+    certHref: "assets/certificados/GoogleAIEssentialsV1Badge.pdf",
+    download: "Jesus Seiler Google AI Essentials V1",
+    slide: 0,
+    col: 0,
+  },
 
   // --- Slide 1 / Card Right ---
   {
